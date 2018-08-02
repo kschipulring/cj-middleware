@@ -1,0 +1,50 @@
+/* 6.0 - Data Visualization - Progress Circle  */
+@-webkit-keyframes progression {
+  0% {
+    stroke-dashoffset: 0; } }
+@keyframes progression {
+  0% {
+    stroke-dashoffset: 0; } }
+div.circle-line.progress {
+  margin: 3px 0 0 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+  box-shadow: none; }
+
+div.global-footer div.circle-line.progress > svg {
+  max-height: 80px; }
+
+div.progress.circle-line > svg > g:nth-child(3) > circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  webkit-transform: rotateY(180deg) rotateZ(-90deg);
+  transform: rotateY(180deg) rotateZ(-90deg); }
+
+div.progress.circle-line > svg > g:nth-child(3) > circle.progress-monthly-completion-circle,
+div.progress.circle-line > svg > g:nth-child(3) > circle.progress-assessment-completion-circle,
+div.progress.circle-line > svg > g:nth-child(3) > circle.progress-profile-assessment-completion-circle,
+div.progress.circle-line > svg > g:nth-child(3) > circle.progress-assessment-average-circle,
+div.progress.circle-line > svg > g:nth-child(3) > circle.progress-monthly-average-circle,
+div.progress.circle-line > svg > g:nth-child(3) > circle.progress-profile-monthly-completion-circle {
+  fill: none;
+  stroke-width: 9;
+  /* stroke: rgba(0,0,0,1.0); */
+  opacity: 1.0; }
+
+div.progress.circle-line > svg > g:nth-child(3) > circle.progress-monthly-completion-circle,
+div.progress.circle-line > svg > g:nth-child(3) > circle.progress-assessment-completion-circle {
+  stroke: black; }
+
+div.progress.circle-line > svg > g:nth-child(3) > circle.progress-monthly-average-circle,
+div.progress.circle-line > svg > g:nth-child(3) > circle.progress-profile-monthly-completion-circle,
+div.progress.circle-line > svg > g:nth-child(3) > circle.progress-profile-assessment-completion-circle,
+div.progress.circle-line > svg > g:nth-child(3) > circle.progress-assessment-average-circle {
+  stroke: white; }
+
+.animation-trigger {
+  -webkit-animation: progression 3s;
+  animation: progression 3s; }
+
+/*# sourceMappingURL=data-viz.css.map */

@@ -1,0 +1,109 @@
+<!-- <img src="{site_url}assets/ambassador-profile-cropped.jpg" class="img-responsive" /> -->
+<script type="text/javascript">
+  var journeys = {journeys_json_data};
+  {exp:elan_api:lex_categories_data}
+</script>
+	<div class="background-profile-image col-md-12 row">
+
+		<div class="inner">
+			<!-- Dynamic Avatar From User account goes here -->
+			<div class="profile-main-image-avatar">
+			</div>
+			<div class="profile-cover-text">
+				<h4 class="assoc-name"></h4>
+				<h5 class="assoc-city"></h5>
+				<h5 class="assoc-country"></h5>
+			</div>
+		</div>
+
+	</div>
+	<div class="user-profile row">
+		<div class="profile-1 col-md-4">
+			<h5>{exp:transcribe:replace name="joined"}</h5>
+			<h4 class="joined-coach-date"></h4>
+		</div>
+		<div class="profile-2 col-md-4">
+			<h5 class="associate-role-text"><span class="associate-role"></span> {exp:transcribe:replace name="since"}</h5>
+            <h4 class="associate-date"></h4>
+
+		</div>
+		<div class="profile-3 col-md-4">
+			<h5 class="assoc-rank-text"><span class="assoc-rank"></span> {exp:transcribe:replace name="since"}</h5>
+            <h4 class="assoc-rank-date"></h4>
+		</div>
+	</div>
+	<div class="row bottom-profile">
+		<div class="progress-score-row">
+			<div class="vertical-center data-circle myprofile-row-2-1">
+				<div class="circle-line progress">
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
+						<circle cx="50" cy="50" r="40" stroke-width="8" fill="none" class="data-assessment-completion-color" />
+						<g>
+							<line x1="50" y1="50" x2="50" y2="50" stroke="rgba(235,235,235,1.0)" class="course-circle" />
+							<text x="50" y="59" text-anchor="middle" font-size="16" font-weight="600" class="data-assessments-complete"></text>
+						</g>
+						<g>
+							<circle class="progress-profile-assessment-completion-circle" cx="-50" cy="-50" r="45" stroke-dashoffset="" />
+						</g>
+					</svg>
+					<h5>{exp:transcribe:replace name="monthly"}<br>{exp:transcribe:replace name="completion"}</h5>
+				</div>
+			</div>
+			<div class="vertical-center myprofile-row-2-2">
+                    <div class="clear">
+						<div id="g2" class="gauge"><h4 class="assoc-rank-next assoc-rank-text"></h4></div>
+						<h5>{exp:transcribe:replace name="nextprofile"}</br>{exp:transcribe:replace name="level"}</h5>
+					</div>
+					
+			</div>
+			<div class="vertical-center data-circle myprofile-row-2-3">
+				<div class="circle-line progress">
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
+						<circle cx="50" cy="50" r="40" stroke-width="8" fill="none" class="data-assessment-average-color"/>
+						<g>
+							<line x1="50" y1="50" x2="50" y2="50" stroke="rgba(235,235,235,1.0)" class="course-circle" />
+							<text x="52" y="59" text-anchor="middle" font-size="16" font-weight="600" class="data-assessments-percent"></text>
+
+							<!-- <text x="50" y="115" text-anchor="middle" font-size="12">MONTHLY</text> 
+							<text x="50" y="130" text-anchor="middle" font-size="12">AVR SCORE</text> -->
+						</g>
+						<g>
+							<circle class="progress-assessment-average-circle" cx="-50" cy="-50" r="45" stroke-dashoffset="" />
+						</g>
+					</svg>
+					<h5>{exp:transcribe:replace name="monthly"}<br>{exp:transcribe:replace name="avgscore"}</h5>
+				</div>
+			</div>
+		</div>
+	<div class="profile-main-row-2 clearfix">
+		<hr class="profile-row-3" />
+		<div class="myprofile-row-3-1">
+			<h3> {exp:transcribe:replace name="next"}<br>{exp:transcribe:replace name="destination"} </h3>
+			<h4 class="next-destination"></h4>
+		</div>
+		<div class="myprofile-row-3-2">
+		</div>
+		<div class="myprofile-row-3-3">
+			<img class="passport-svg" src="{site_url}assets/passport.svg" />
+			<div class="stamps"> <div class="passport">{exp:transcribe:replace name="passport"}</div><div class="passport">{exp:transcribe:replace name="stamps"}</div><div class="stamps-amount">0</div></div>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<hr class="profile-row-4" />
+		<div class="col-md-5 myprofile-row-4-1">
+			<div class="avg-score"><h4> {exp:transcribe:replace name="avgscore"} <span class="data-course-average-score"></span></h4></div>
+			<div class="progress progress-graph">
+			<div class="progress-bar progress-bar-success data-course-completed" role="progressbar"></div>
+            <div class="progress-bar progress-bar-danger data-course-scores"></div>
+
+
+			</div>
+		</div>
+		<div class="col-md-7 myprofile-row-4-2">
+			<h4> {exp:transcribe:replace name="targetarrival"} </h4>
+			<div class="left-target-arrival"></div>
+            <div class="center-target-arrival"></div>
+            <div class="right-target-arrival"></div>
+		</div>
+	</div>
+	</div>

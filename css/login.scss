@@ -1,0 +1,91 @@
+/* 2.0 - custom member login CSS */
+@import "colors";
+@import "mixins";
+
+.custom-login {
+  width: 100%;
+  background-color: #000000 !important;
+  padding: 50px 0px 0px 0px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10000;
+
+  .login-block {
+    width: 48%;
+    margin: 0 auto;
+
+    .login-logo {
+      margin-bottom: 30px;
+      text-align: center;
+      img {
+        width: 50%;
+      }
+    }
+
+    @include screen-size(sm-down) {
+      width: 70%;
+
+      .login-logo img {
+        width: 90%;
+      }
+    }
+
+    .input {
+      color: #FFFFFF;
+      background-color: #000000;
+      margin-bottom: 15px;
+      width: 100%;
+      font-size: 1.2em;
+      padding: 1% 0 1% 1%;
+    }
+    .input-check {
+      color: #FFFFFF;
+      background-color: #000000;
+    }
+    .input-check-div {
+      margin-top: 20px;
+      width: 100%;
+      color: #CCC;
+    }
+    .submit {
+      color: #000000;
+      background-color: #FFFFFF;
+      border: none;
+      margin-bottom: 15px;
+      width: 100%;
+      font-size: 1.2em;
+      padding: 1% 0 1% 1%;
+      text-transform: uppercase;
+    }
+    .forgot-password {
+      float: right;
+      color: #FFFFFF;
+    }
+    .forgot-password-div {
+      margin-bottom: 15px;
+      width: 100%;
+      color: #CCC;
+      //text-align: right;
+    }
+    .change-password-div {
+      margin-bottom: 15px;
+      width: 100%;
+      color: #CCC;
+      text-align: left;
+    }
+    .change-password-div-text {
+      padding-top: 35px;
+      margin-bottom: 15px;
+      width: 100%;
+      color: #CCC;
+      text-align: left;
+      font-size: 1.2em;
+    }
+  }
+
+  .nameError {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #FF0000;
+  }
+}

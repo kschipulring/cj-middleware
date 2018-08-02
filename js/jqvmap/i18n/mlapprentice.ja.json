@@ -1,0 +1,187 @@
+﻿{
+	"additionalContent": [
+		{
+			"region": "thehighlineneighborhood",
+			"transform": "matrix(0.2939 -0.9558 0.9558 0.2939 480.6837 589.4078)",
+			"content": [
+				{"text": "ハイライン", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "コーチブランド", "x": -20, "y": 18, "class": "st27 st26"}
+			]
+		},
+		{
+			"region": "columbuscircle",
+			"transform": "matrix(0.8895 0.457 -0.457 0.8895 645.2094 186.5546)",
+			"content": [
+				{"text": "コロンバス・サークル", "x": -5, "y": -5, "class": "st25 st28"},
+				{"text": "モダンラグジュア", "x": 5, "y": 12, "class": "st27 st28"},
+				{"text": "リー・ストアツアー", "x": 3, "y": 30, "class": "st27 st28"}
+			]
+		},
+		{
+			"region": "garmentdistrict",
+			"transform": "matrix(0.4905 -0.8715 0.8715 0.4905 651.1349 483.1003)",
+			"content": [
+				{"text": "ガーメント街", "x": 10, "y": 0, "class": "st25 st26"},
+				{"text": "ウィメンズバッグ101", "x": -16.9, "y": 18, "class": "st27 st26"}
+			]
+		},
+		{
+			"region": "murrayhill",
+			"transform": "matrix(0.4483 -0.8939 0.8939 0.4483 782.1896 534.5327)",
+			"content": [
+				{"text": "マレーヒル", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "メンズバツグ101", "x": -20.6, "y": 18, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "hellskitchen",
+			"transform": "matrix(0.4952 -0.8688 0.8688 0.4952 548.3871 413.2535)",
+			"content": [
+				{"text": "ヘルズ・キッチン", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "革小物101", "x": 12, "y": 18, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "theaterdistrict",
+			"transform": "matrix(0.4832 -0.8755 0.8755 0.4832 705.0934 334.658)",
+			"content": [
+				{"text": "シアター街", "x": 15, "y": 10, "class": "st25 st29"},
+				{"text": "3つのパワー", "x": 10, "y": 25, "class":"st27 st29"}
+			]
+		},				
+		{
+			"region": "midtowneast",
+			"transform": "matrix(0.8793 0.4762 -0.4762 0.8793 831.5735 335.053)",
+			"content": [
+				{"text": "ミッドタウンイースト", "x": -20, "y": -10, "class": "st25 st26"},
+				{"text": "モダンラグジュアリー", "x": -20, "y": 15, "class":"st27 st26"},
+				{"text": "なお出迎え", "x": 5, "y": 40, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "clinton",
+			"transform": "matrix(0.877 0.4804 -0.4804 0.877 628.8459 249.6925)",
+			"content": [
+				{"text": "クリントン", "x": -10, "y": -5, "class": "st25 st30"},
+				{"text": "複数のお客様を同", "x": -27, "y": 14.8, "class":"st27 st30"},
+				{"text": "時に接客する", "x": -15, "y": 33, "class":"st27 st30"}
+			]
+		},
+		{
+			"region": "chelsea",
+			"transform": "matrix(0.8847 0.4662 -0.4662 0.8847 596.7166 579.8589)",
+			"content": [
+				{"text": "チェルシー", "x": -8, "y": 0, "class": "st25 st26"},
+				{"text": "ブランドで魅了する", "x": -30, "y": 18, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "soho",
+			"transform": "matrix(0.8512 0.5249 -0.5249 0.8512 530.3207 842.9035)",
+			"content": [
+				{"text": "ソーホー", "x": -30, "y": 0, "class": "st25 st26"},
+				{"text": "レザー101", "x": -35, "y": 18, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "westvillage",
+			"transform": "matrix(0.5028 -0.8644 0.8644 0.5028 497.0017 738.5007)",
+			"content": [
+				{"text": "ウェストビレッジ", "x": -15, "y": 0, "class": "st25 st31"},
+				{"text": "ストーリーテリング", "x": -22, "y": 16.5, "class":"st27 st31"}
+			]
+		},   
+		{
+			"region": "greenwichvillage",
+			"transform": "matrix(0.8796 0.4758 -0.4758 0.8796 601.5169 743.0641)",
+			"content": [
+				{"text": "グリーニッチビレッジ", "x": -10, "y": 0, "class": "st25 st26"},
+				{"text": "品質とクラフトマンシ", "x": -10, "y": 22, "class":"st27 st26"},
+				{"text": "ップ101", "x": 30, "y": 45, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "gramercy",
+			"transform": "matrix(0.8898 0.4564 -0.4564 0.8898 739.1454 656.7009)",
+			"content": [
+				{"text": "グラマシー", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "商品の魅力を語る", "x": -20, "y": 18, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "eastvillage",
+			"transform": "matrix(0.4211 -0.907 0.907 0.4211 752.6664 872.3807)",
+			"content": [
+				{"text": "イーストビレッジ", "x": -23, "y": 0, "class": "st25 stev"},
+				{"text": "価格を挟み込んだ", "x": -25, "y": 20, "class":"st27 stev"},
+				{"text": "テクニック", "x": -10, "y": 40, "class":"st27 stev"}
+			]
+		},
+		{
+			"region": "upperwestsideneighborhood",
+			"transform": "matrix(0.4706 -0.8823 0.8823 0.4706 712.5534 119.5164)",
+			"content": [
+				{"text": "アッパーウェストサイド", "x": -30, "y": 0, "class": "st25 st26"},
+				{"text": "パーソナルな体験を提供する", "x": -45, "y": 24, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "centralpark",
+			"transform": "matrix(0.4744 -0.8803 0.8803 0.4744 828.4642 138.2979)",
+			"content": [
+				{"text": "セントラルパーク", "x": -20, "y": 0, "class": "st25 st26"},
+				{"text": "お客様を理解する", "x": -20, "y": 24, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "uppereastside",
+			"transform": "matrix(0.4696 -0.8829 0.8829 0.4696 903.2277 189.8457)",
+			"content": [
+				{"text": "アッパーイーストサイド", "x": -20, "y": 12, "class": "st25 st26"},
+				{"text": "商品を紹介して提案する", "x": -20, "y": 35, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "yorkville",
+			"transform": "matrix(0.4765 -0.8792 0.8792 0.4765 1023.8438 184.0225)",
+			"content": [
+				{"text": "ヨークビル", "x": -20, "y": 0, "class": "st25 st26"},
+				{"text": "懸念を払拭し、", "x": -30, "y": 25, "class":"st27 st26"},
+				{"text": "購入に結びつける", "x": -40, "y": 50, "class":"st27 st26"}
+			]
+		},  
+		{
+			"region": "tribeca",
+			"transform": "matrix(0.8824 0.4706 -0.4706 0.8824 477.6523 932.2043)",
+			"content": [
+				{"text": "トライベッカ", "x": -20, "y": 0, "class": "st25 st26"},
+				{"text": "競合他社を知る", "x": -26, "y": 24, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "financialdistrict",
+			"transform": "matrix(0.8964 0.4432 -0.4432 0.8964 398.7719 1034.9568)",
+			"content": [
+				{"text": "金融街", "x": 30, "y": 0, "class": "st25 st26"},
+				{"text": "小売数学", "x": 25, "y": 24, "class":"st27 st26"}
+			]
+		},  
+		{
+			"region": "lowereastside",
+			"transform": "matrix(0.9294 0.369 -0.369 0.9294 671.2167 947.5052)",
+			"content": [
+				{"text": "ローワーイーストサイド", "x": -25, "y": 0, "class": "st25 st26"},
+				{"text": "オペレーション", "x": -5, "y": 24, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "chinatown",
+			"transform": "matrix(0.3946 -0.9189 0.9189 0.3946 575.6385 1035.7544)",
+			"content": [
+				{"text": "チャイナタウン", "x": -7, "y": 0, "class": "st25 stct"},
+				{"text": "ビジュアルマーチャ", "x": -17, "y": 15.3, "class":"st27 stct"},
+				{"text": "ンダイジング", "x": -3, "y": 28.9, "class":"st27 stct"}
+			]
+		}
+	]
+}

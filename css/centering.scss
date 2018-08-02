@@ -1,0 +1,30 @@
+/* 10.0 - Auto centering POC for global containers */
+@import "mixins";
+
+div.container-fluid#main_content {
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+#accordion2 {
+  margin-top: 5px !important;
+}
+
+/*Prevent main content container From sliding under the main site nav*/
+div.container-fluid#main_content {
+  body[data-page="intro"] & {
+    padding-left: 75px;
+
+    @include screen-size(sm-down) {
+      padding-left: 0;
+    }
+  }
+
+  body[data-page="monthlyFocus"] & {
+    padding-left: 75px;
+
+    @include screen-size(sm-down) {
+      padding-left: 0;
+    }
+  }
+}

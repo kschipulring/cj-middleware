@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="{exp:transcribe:language_abbreviation}"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="{exp:transcribe:language_abbreviation}"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="{exp:transcribe:language_abbreviation}"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="not-ie" lang="{exp:transcribe:language_abbreviation}"> <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- Set viewport. -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no,minimal-ui" />
+    <title>{site_name}</title>
+	<meta name="keywords" content="{site_name}" />
+    <meta name="description" content="{site_name}" />
+    <meta name="robots" CONTENT="noindex, nofollow" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+
+	
+	<!-- CSS  -->
+	<link rel="icon" type="image/x-icon" href="{site_url}favicon.ico" />
+	<link rel="stylesheet" href="{site_url}css/bootstrap.css?v=1" />
+	<link rel="stylesheet" href="{site_url}css/jquery-ui.css?v=1" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css">
+	<link rel="stylesheet" href="{site_url}css/jqvmap.css" media="screen" type="text/css"/>
+	<link rel="stylesheet" href="{site_url}css/coach.css" />
+	<link rel="stylesheet" href="{site_url}css/video-js.css?v=1" />
+	
+		
+	<!--  <script src="https://use.typekit.net/qkq5wfi.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script> -->
+	<!-- Using Coach Internal Typekit For Testing -->
+	<!--<script src="https://use.typekit.net/qkq5wfi.js"></script>-->
+	<script src="https://use.typekit.net/qen7bex.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<script src="{site_url}js/jquery-2.2.3.min.js"></script>
+	<script src="{site_url}js/jquery-ui.min.js"></script>
+	<script src="{site_url}js/bootstrap.min.js"></script>
+	<script src="{site_url}js/handlebars-runtime-v4.0.5.js"></script>
+    <!-- Temporarily commenting this out, replace \ with { when added
+    <script src="{site_url}js/jquery.bpopup.min.js"></script>
+    -->
+	<script type="text/javascript" src="{site_url}js/jqvmap/1.5.1/jquery.vmap.js"></script>
+	
+	<script type="text/javascript">
+	// <![CDATA[
+	var member_profile_data;
+	var locationIP;
+	var countryCODE;
+	 $.ajax( { 
+        url: '//freegeoip.net/json/', type: 'POST', dataType: 'jsonp',
+		success: function(location) {
+		locationIP = location.ip;
+		countryCODE = location.country_code;
+		console.log(locationIP + " and " + countryCODE);
+			if(locationIP != '116.50.57.180'){
+			member_profile_data = { elan_user_id: '<?php echo ee()->input->cookie('elan_user_id'); ?>', elan_username: '<?php echo ee()->input->cookie('elan_username'); ?>', country_code: countryCODE || '', location_ip: locationIP || '' };	
+			} else {
+				member_profile_data = { elan_user_id: '<?php echo ee()->input->cookie('elan_user_id'); ?>', elan_username: '<?php echo ee()->input->cookie('elan_username'); ?>',country_code: 'CN' || '', location_ip: '116.50.57.180' || '' };
+			}
+		}
+	});	
+	var coursePopup = false;
+    var site_url = "{site_url}";
+	var logout = ("{path='logout'}");
+    var site_logout = logout.replace(/&amp;/g , "&");
+    var site_short_name = "{site_short_name}";
+	var exp_actions = {exp_actions_json_data};
+	var member_profile_data = {
+	  elan_user_id: '<?php echo ee()->input->cookie('elan_user_id'); ?>',
+	  elan_username: '<?php echo ee()->input->cookie('elan_username'); ?>'
+	};
+
+	{exp:elan_api:get_elan_objects}
+	{exp:elan_api:get_elan_tags}
+	{exp:elan_api:get_elan_languages}
+
+	// ]]>
+	</script>
+
+	  {if logged_in}
+	<script type="text/javascript" src="{site_url}js/raphael-2.1.4.min.js"></script>
+    <script type="text/javascript" src="{site_url}js/justgage.js"></script>
+	<script type="text/javascript" src="{site_url}js/video.min.js"></script>
+    <script type="text/javascript" src="{site_url}js/videojs-contrib-hls.min.js"></script>
+	 {/if}
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+			<script type="text/javascript" src="{site_url}js/respond.js"></script>
+			<script type="text/javascript" src="{site_url}js/html5shiv.js"></script>
+	<![endif]-->
+	<!-- <script src="{site_url}js/gsap.js"></script>
+	<script src="{site_url}js/coach.js"></script> -->
+
+  </head>
+  <body data-page="intro">
+
+    <div id="not-supported">
+	    <div>
+	    	<div class="logo">
+	      	<img src="{site_url}assets/coach-journey-logo.svg" />
+        </div>
+        <div class="copy">
+          <h1>WELCOME TO<br>COACH JOURNEY</h1>
+          <p>Coach Journey may be accessed on a company desktop or iPad in landscape mode only.</p>
+        </div>
+	    </div>
+    </div>
+
+	<div class="mobile-header">
+		<div id="mobile-logo" class="logo">
+			<a href="{site_url}">
+				<img src="{site_url}assets/coach-journey-logo.svg" />
+			</a>
+		</div>
+
+		<!--<div class="translator-icon">-->
+			<!--<img src="assets/language-icon.png" />-->
+		<!--</div>-->
+		<div class="associate-completion">
+			<div class="data-circle">
+				<div class="circle-line progress">
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
+						<circle cx="50" cy="50" r="45" class="data-course-completion-color" stroke-width="8" fill="none" />
+						<g>
+							<line x1="50" y1="50" x2="50" y2="50" stroke="rgba(255,255,255,1.0) "class="course-circle" />
+							<text x="50" y="57" text-anchor="middle" font-size="20" font-weight="600" class="data-assessments-complete"></text>
+						</g>
+						<g>
+							<circle class="progress-assessment-completion-circle" cx="-50" cy="-50" r="48" stroke-dashoffset="" />
+						</g>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu-burger">
+			<i class="icon-hamburger-menu"></i>
+		</div>
+	</div>
+
+
+  	<div id="site-nav">
+
+			<a href="{site_url}" class="nav-close">
+				<i class="icon-close-btn"></i>
+			</a>
+
+  		<ul>
+
+  			<li>
+  				<a href="myProfileBlock" class="coach-nav-link avatar-link">
+  					<!-- Dynamic Avatar From User account goes here -->
+						<span class="nav-avatar"></span>
+  				</a>
+  			</li>
+
+  			<li class="slider-map">
+  				<a href="mapJourney" class="coach-nav-link">
+            <i class="icon-world-location"></i>
+          </a>
+  			</li>
+
+  		</ul>
+  	</div>
+    <!-- {if logged_in}{embed="home/_language_choice"}{/if} -->
+

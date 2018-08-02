@@ -1,0 +1,798 @@
+{
+  "courseDetail": [
+    {
+      "course_id": "product-info1",
+      "courseTitle": "coach 1941 overview",
+      "courseSummary": "With a focus on craftsmanship, this collection reimagines traditional Americana references—including varsity teams, the West and hip-hop—for the Coach girl and guy.",
+      "learningObjectives": [
+        {
+          "title":"welcome to Fall 2016",
+          "type":"video",
+          "is_link":"true",
+          "source":"/assets/video/1941_V02_-_ALL_THAT_WEVE_BECOME.mp4",
+          "is_objective_complete":"false",
+		  "class_id":"product-info1-1"
+        },
+        {
+          "title":"design inspiration: women's",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/WomensInspiration.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"product-info1-2"
+        },
+        {
+          "title":"design inspiration: men's",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/MensInspiration.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"product-info1-3"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"product-info1-4"
+        }
+      ]
+    },
+    {
+      "course_id": "product-info2",
+      "courseTitle": "coach 1941 women's",
+      "courseSummary": "An exploration of Americana from a cool, urban angle, our fall collection for women reconfigures team sport uniforms and moto—inspired pieces with nostalgic details borrowed from Westernwear.",
+      "learningObjectives": [
+        {
+          "title":"fall 2016 runway show",
+          "type":"video",
+          "is_link":"true",
+          "source":"/assets/video/womens_fall_16.mp4",
+          "is_objective_complete":"false",
+		  "class_id":"product-info2-1"
+        },
+        {
+          "title":"looks we love",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/Womens_LooksWeLove.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"product-info2-2"
+        },
+        {
+          "title":"accessories we love",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/Womens_BagsAccessories.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"product-info2-3"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"product-info2-4"
+        }
+      ]
+    },
+    {
+      "course_id": "product-info3",
+      "courseTitle": "coach 1941 men's",
+      "courseSummary": "With nods to Bruce Springsteen, hip hop’s B-boys and mixed with a greaser—inspired cool moto mix, our fall collection for men highlights the hero in every guy.",
+      "learningObjectives": [
+        {
+          "title":"fall 2016 runway show",
+          "type":"video",
+          "is_link":"true",
+          "source":"/assets/video/mens_fall_16.mp4",
+          "is_objective_complete":"false",
+		  "class_id":"product-info3-1"
+        },
+        {
+          "title": "looks we love",
+          "type": "pdf",
+          "is_link": "true",
+          "source": "/assets/pdf/retail/Mens_LooksWeLove.pdf",
+          "is_objective_complete": "false",
+		  "class_id":"product-info3-2"
+        },
+        {
+          "title": "accessories we love",
+          "type": "pdf",
+          "is_link": "true",
+          "source": "/assets/pdf/retail/Mens_BagsAccessories.pdf",
+          "is_objective_complete": "false",
+		  "class_id":"product-info3-3"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"product-info3-4"
+        }
+      ]
+    },
+    {
+      "course_id": "service-info1",
+      "courseTitle": "styling 101",
+      "courseSummary": "Take a deeper dive into the styling principles behind our Fall collection with a focus on color and print, styling with accessories and the art of layering.",
+      "learningObjectives": [
+        {
+          "title":"PRINCIPLES OF COLOR",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/PRINCIPLES_OF_COLOR.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"service-info1-1"
+        },
+        {
+          "title":"MIX PRINTS LIKE A PRO",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/HOW_TO_MIX_PRINTS.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"service-info1-2"
+        },
+        {
+          "title":"THE ART OF LAYERING",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/THE_ART_OF_LAYERING.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"service-info1-3"
+        },
+		{
+          "title":"STYLING WITH BAGS",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/STYLING_WITH_BAGS.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"service-info1-4"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"service-info1-5"
+        }
+      ]
+    },
+    {
+      "course_id": "service-info2",
+      "courseTitle": "coach style challenge",
+      "courseSummary": "Put your skills to the test in our own interactive styling game where you choose the best piece to complete the look by style personality.",
+      "learningObjectives": [
+        {
+          "title":"Finish the Look",
+          "type":"game",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"service-info2-1"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"service-info2-2"
+        }
+      ]
+    },
+    {
+      "course_id": "service-info3",
+      "courseTitle": "clienteling and appointments",
+      "courseSummary": "With the new collection hitting stores, this is the perfect opportunity to refresh your clienteling and appointment hosting skills to create a deeper connection with your customers.",
+      "learningObjectives": [
+        {
+          "title":"Clienteling Basics",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/CLIENTELING_FOCUS_COACH_1941.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"service-info3-1"
+        },
+        {
+          "title":"hosting appointments",
+          "type":"pdf",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"service-info3-2"
+        },
+        {
+          "title":"clienteling worksheet",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/ClientelingWorksheet.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"service-info3-3"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"service-info3-4"
+        }
+      ]
+    },
+    {
+      "course_id": "seasonal-info1",
+      "courseTitle": "regional development forum",
+      "courseSummary": "Get an insider’s look into Coach as company leaders share their vision of the brand, the importance of creating a global message and the integral role we play in being brand ambassadors.",
+      "learningObjectives": [
+		 {
+          "title":"victor luis",
+          "type":"video",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"seasonal-info1-1"
+        },
+        {
+          "title":"stuart vevers",
+          "type":"video",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"seasonal-info1-2"
+        },
+        {
+          "title":"andre cohen",
+          "type":"video",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"seasonal-info1-3"
+        },
+        {
+          "title":"diane MAHADY",
+          "type":"video",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"seasonal-info1-4"
+        },
+		{
+          "title":"key messages",
+          "type":"pdf",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"seasonal-info1-5"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"seasonal-info1-6"
+        }
+      ]
+    },
+    {
+      "course_id": "seasonal-info2",
+      "courseTitle": "coach fragrance",
+      "courseSummary": "Learn more about our new Coach fragrance—a luxurious, timeless blend of spice and fruit—developed in partnership with international fragrance house Inter Parfums.",
+      "learningObjectives": [
+        {
+          "title":"ad campaign",
+          "type":"video",
+          "is_link":"true",
+          "source":"/assets/video/AD_CAMPAIGN.mp4",
+          "is_objective_complete":"false",
+		  "class_id":"seasonal-info2-1"
+        },
+        {
+          "title":"history of fragrance",
+          "type":"video",
+          "is_link":"true",
+          "source":"/assets/video/History_Of_Fragrance.mp4",
+          "is_objective_complete":"false",
+		  "class_id":"seasonal-info2-2"
+        },
+        {
+          "title":"meet the coach fragrance",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/MEET_THE_COACH_FRAGRANCE.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"seasonal-info2-3"
+        },
+        {
+          "title":"fragrance selling tips",
+          "type":"pdf",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"seasonal-info2-4"
+        },
+		{
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"seasonal-info2-5"
+        }
+      ]
+    },
+    {
+      "course_id": "outlet-product-info1",
+      "courseTitle": "fall overview",
+      "courseSummary": "Bolder than ever and fresh for fall, our most-loved silhouettes are infused with references of our heritage as well as authentic New York style.",
+      "learningObjectives": [
+        {
+          "title":"Inspiration & Color",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/INSPIRATION_AND_COLOR.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-product-info1-1"
+        },
+        {
+          "title":"Signature Details",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/SIGNATURE_DETAILS.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-product-info1-2"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-product-info1-2"
+        }
+      ]
+    },
+    {
+      "course_id": "outlet-product-info2",
+      "courseTitle": "the womens collection",
+      "courseSummary": "Bold prints and bright colors pave the way for on-trend outerwear pieces, new and covetable handbag silhouettes and accessories to personalize her look.",
+      "learningObjectives": [
+        {
+          "title":"Key Statements",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/WOMENS_KEY_STATEMENTS_FALL_16.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-product-info2-1"
+        },
+        {
+          "title":"Spotlight On: Tyler Tote",
+          "type":"video",
+          "is_link":"true",
+          "source":"/assets/video/Spotlight_On_Tyler.mp4",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-product-info2-2"
+        },
+        {
+          "title":"Leather 101: Pebble Leather",
+          "type":"video",
+          "is_link":"true",
+          "source":"/assets/video/Leather_101_Pebble_Leather.mp4",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-product-info2-3"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-product-info2-4"
+        }
+      ]
+    },
+    {
+      "course_id": "outlet-product-info3",
+      "courseTitle": "the mens collection",
+      "courseSummary": "Archival-inspired varsity stripe and military-themed outerwear and accessories take centerstage and offer the Coach guy luxe silhouettes with smart functionality.",
+      "learningObjectives": [
+        {
+          "title":"Key Statements",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/MENS_KEY_STATEMENTS_FALL_2016.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-product-info3-1"
+        },
+        {
+          "title":"Spotlight On: Henry Backpack",
+          "type":"video",
+          "is_link":"true",
+          "source":"/assets/video/SPOTLIGHT_ON_HENRY_BACKPACK.mp4",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-product-info3-2"
+        },
+        {
+          "title":"Leather 101: Sport Calf",
+          "type":"video",
+          "is_link":"true",
+          "source":"/assets/video/Leather_101_Sport_Calf_Leather.mp4",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-product-info3-3"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-product-info3-4"
+        }
+      ]
+    },
+    {
+      "course_id": "outlet-service-info1",
+      "courseTitle": "styling 101",
+      "courseSummary": "Take a deeper dive into the styling principles behind cross-selling and styling with accessories to enhance your customer’s in-store experience.",
+      "learningObjectives": [
+		{
+          "title":"Principles of Color",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/PRINCIPLES_OF_COLOR.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-service-info1-1"
+        },
+        {
+          "title":"Styling with Bags",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/STYLING_WITH_BAGS.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-service-info1-2"
+        },
+        {
+          "title":"Complete the Look",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/CompleteTheLook.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-service-info1-3"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-service-info1-4"
+        }
+      ]
+    },
+    {
+      "course_id": "outlet-service-info2",
+      "courseTitle": "Coach Style Challenge",
+      "courseSummary": "Put your skills to the test in our own interactive styling game where you choose the best piece to complete the look by style personality.",
+      "learningObjectives": [
+        {
+          "title":"Finish the Look",
+          "type":"game",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-service-info2-1"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-service-info2-2"
+        }
+      ]
+    },
+    {
+      "course_id": "outlet-service-info3",
+      "courseTitle": "knowing the customer",
+      "courseSummary": "With Fall in stores, this is the perfect opportunity to refresh your skills on making a personal connection and providing a unique Coach experience.",
+      "learningObjectives": [
+        {
+          "title":"Getting to know the customer",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/GETTING_TO_KNOW_THE_CUSTOMER.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-service-info3-1"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-service-info3-2"
+        }
+      ]
+    },
+	 {
+      "course_id": "outlet-seasonal-focus1",
+      "courseTitle": "regional forum",
+      "courseSummary": "Get an insider’s look into Coach as company leaders share their vision of the brand, the importance of creating a global message and the integral role we play in being brand ambassadors.",
+      "learningObjectives": [
+        {
+          "title":"Victor Luis",
+          "type":"video",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-seasonal-focus1-1"
+        },
+		{
+          "title":"Stuart Vevers",
+          "type":"video",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-seasonal-focus1-2"
+        },
+        {
+          "title":"Andre Cohen",
+          "type":"video",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-seasonal-focus1-3"
+        },
+        {
+          "title":"Diane Mahady",
+          "type":"video",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-seasonal-focus1-4"
+        },
+        {
+          "title":"key messages",
+          "type":"pdf",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-seasonal-focus1-5"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-seasonal-focus1-6"
+        }
+      ]
+    },
+	 {
+      "course_id": "outlet-seasonal-focus2",
+      "courseTitle": "knowing the customer",
+      "courseSummary": "Learn more about our new Coach fragrance—a luxurious, timeless blend of spice and fruit—developed in partnership with international fragrance house Inter Parfums.",
+      "learningObjectives": [
+        {
+          "title":"Ad Campaign",
+          "type":"video",
+          "is_link":"true",
+          "source":"/assets/video/AD_CAMPAIGN.mp4",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-seasonal-focus2-1"
+        },
+        {
+          "title":"History of Fragrance",
+          "type":"video",
+          "is_link":"true",
+          "source":"/assets/video/History_Of_Fragrance.mp4",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-seasonal-focus2-2"
+        },
+        {
+          "title":"Meet the Coach Fragrance",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/MEET_THE_COACH_FRAGRANCE.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-seasonal-focus2-3"
+        },
+        {
+          "title":"Fragrance Selling Tips",
+          "type":"pdf",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-seasonal-focus2-4"
+        },
+        {
+          "title":"assessment",
+          "type":"quiz",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-seasonal-focus2-5"
+        }
+      ]
+    },
+    {
+      "course_id": "retail-product-library1",
+      "courseTitle": "product Glossary",
+      "courseSummary": "Review the inspiration, craftsmanship and more behind key Coach silhouettes.",
+      "learningObjectives": [
+		{
+          "title":"The Insider: Coach 1941",
+          "type":"pdf",
+          "is_link":"false",
+          "source":"#",
+          "is_objective_complete":"false",
+		  "class_id":"product-library1-1"
+        },
+        {
+          "title":"Women’s Product Library",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/RETAIL_WOMENs_PRODUCT_LIBRARY.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"product-library1-2"
+        },
+        {
+          "title":"Men’s Product Library",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/RETAIL_MENs_PRODUCT_LIBRARY.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"product-library1-3"
+        }
+      ]
+    },
+	{
+      "course_id": "outlet-product-library1",
+      "courseTitle": "product Glossary",
+      "courseSummary": "Review the inspiration, craftsmanship and more behind key Coach silhouettes.",
+      "learningObjectives": [
+        {
+          "title":"Women’s Product Library",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/OUTLET_WOMENs_PRODUCT_LIBRARY.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-product-library1-1"
+        },
+        {
+          "title":"Men’s Product Library",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/OUTLET_MENs_PRODUCT_LIBRARY.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-product-library1-2"
+        },
+        {
+          "title":"Retail Bags We Love",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/RETAIL_PRODUCTLIBRARY.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-product-library1-2"
+        }
+      ]
+    },
+    {
+      "course_id": "outlet-other1",
+      "courseTitle": "archive",
+      "courseSummary": "Product knowledge, styling advice and more from previous seasons.",
+      "learningObjectives": [
+        {
+          "title":"coach outlet - summer 2016",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/CoachOutlet_Summer2016.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-other1-1"
+        }
+      ]
+    },
+    {
+      "course_id": "outlet-spotted1",
+      "courseTitle": "spotted",
+      "courseSummary": "Check to see the latest of who’s wearing Coach.",
+      "learningObjectives": [
+        {
+          "title":"north america editorial",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/NORTH_AMERICA_EDITORIAL.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-spotted1-1"
+        },
+        {
+          "title":"international editorial",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/INTERNATIONAL_EDITORIAL.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-spotted1-2"
+        },
+        {
+          "title":"north america style watch",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/NORTH_AMERICA_STYLE_WATCH.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-spotted1-3"
+        },
+        {
+          "title":"international style watch",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/outlet/INTERNATIONAL_STYLEWATCH.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"outlet-spotted1-4"
+        }
+      ]
+    },
+    {
+      "course_id": "other1",
+      "courseTitle": "archive",
+      "courseSummary": "Product knowledge, styling advice and more from previous seasons.",
+      "learningObjectives": [
+        {
+          "title":"The Insider: Coach New York  ",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/Archive_CoachNewYork.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"other1-1"
+        }
+      ]
+    },
+    {
+      "course_id": "spotted1",
+      "courseTitle": "spotted",
+      "courseSummary": "Check to see the latest of who’s wearing Coach.",
+      "learningObjectives": [
+        {
+          "title":"north america editorial",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/NORTH_AMERICA_EDITORIAL.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"spotted1-1"
+        },
+        {
+          "title":"international editorial",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/INTERNATIONAL_EDITORIAL.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"spotted1-2"
+        },
+        {
+          "title":"north america style watch",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/NORTH_AMERICA_STYLE_WATCH.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"spotted1-3"
+        },
+        {
+          "title":"international style watch",
+          "type":"pdf",
+          "is_link":"true",
+          "source":"/assets/pdf/retail/INTERNATIONAL_STYLEWATCH.pdf",
+          "is_objective_complete":"false",
+		  "class_id":"spotted1-4"
+        }
+      ]
+    }
+  ]
+}

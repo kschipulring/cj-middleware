@@ -1,0 +1,52 @@
+<script id="map-info-template" type="text/x-handlebars-template">
+	{{#if OBJECT_SHOW_NAV}}
+		<div class="panel-footer">
+			<div class="links pull-left right-border">
+				<a href="javascript://" id="btn-previous">
+				<span class="glyphicon glyphicon-menu-left"></span>
+				{exp:transcribe:replace name="previous"}
+				</a>
+			</div>
+			<div class="links pull-right">
+				<a href="javascript://" id="btn-next">
+				{exp:transcribe:replace name="next"}
+				<span class="glyphicon glyphicon-menu-right"></span>
+				</a>
+			</div>
+		</div>
+	{{/if}}	
+	<div class="map-info-details inner {{OBJECT_CLASS_NAME}}">
+        {{#if OBJECT_SHOW_MAPS}}
+		{{#unless OBJECT_SHOW_INFO}}
+		<div class="map-nav-buttons">
+			<ul class="map-nav">
+				<li class="nyc"><a href="journey/nyc">NYC</a></li>
+				<li class="europe"><a href="journey/eu">EUROPE</a></li>
+				<!--<li class="asia"><a href="journey/asia">ASIA</a></li>-->
+			</ul>
+		</div>
+		{{/unless}}
+        {{/if}}
+		<img class="img-responsive main-image" src="{{OBJECT_IMAGE}}" />
+		<div class="map-heading {{#if OBJECT_SHOW_INFO}}info{{/if}} {{#unless OBJECT_SHOW_MAPS}}no-maps{{/unless}}">{{OBJECT_TAG_LANG}} {{#if OBJECT_HELP}}<span class="icon-questionmark btn-help" tabindex="0" role="button" data-html="true" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="{{{OBJECT_HELP_TEXT}}}"></span>{{/if}}</div>
+		<div class="panel panel-default panel-map">
+			<div class="panel-heading">{{NEIGHBORHOOD_TITLE}} </div>
+			<div class="panel-body">
+			{{{NEIGHBORHOOD_DESC}}}
+				{{#if OBJECT_SHOW_INFO}}
+				<div class="panel-object-info">
+					<div class="stops pull-left">
+						<div class="image {{OBJECT_STOPS_IMAGE_CLASS}}"><div class="text">{{OBJECT_NUMBER_OF_STOPS}}</div></div>
+						{exp:transcribe:replace name="numberofstops"}
+					</div>
+					<div class="seattime pull-right">
+						<div class="image {{OBJECT_MINUTES_IMAGE_CLASS}}"><div class="text">{{OBJECT_MINUTES_TO_FINISH}}</div></div>
+						{exp:transcribe:replace name="totalminutes"}
+					</div>
+				</div>
+				{{/if}}
+				<a class="btn btn-primary" role="button" href="javascript://" id="mapCallToAction">{{CALL_TO_ACTION}}</a>
+			</div>
+		</div>
+	</div>
+</script>

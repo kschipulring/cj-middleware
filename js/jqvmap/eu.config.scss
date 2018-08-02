@@ -1,0 +1,225 @@
+@import "../../css/colors";
+
+/*  Map Elements  */
+
+#vmap {
+  svg {
+    //position: absolute;
+    //top: 0;
+    //left: 0;
+    //background-color: $map-water;
+  }
+}
+
+/* Map Legend */
+
+.map-legend {
+  //height: calc(96% - 80px);
+  //top: 3%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 52px;
+  right: -52px;
+  z-index: 1000;
+  background: #FFF;
+  border-left: 1px solid #CCC;
+
+  ul {
+    list-style-type: none;
+    li {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      margin-left: -9px;
+
+      &.active {
+        border: 3px solid rgba(255, 255, 255, .4);
+
+        &:before {
+          content: ''; //attr(data-title);
+          border-bottom: 0px none;
+/*          position: absolute;
+          width: 140px;
+          border-bottom: 2px dotted rgba(0, 0, 0, .1);
+          right: -167px;
+          top: 0;
+          text-align: left;
+          font-size: 11px;
+          letter-spacing: 1px;
+          text-transform: uppercase;*/
+        }
+        &:after {
+          content: '';
+          //font-family: 'icomoon';
+          //content: '\e907';
+          //color: rgba(0, 0, 0, .5);
+          //position: absolute;
+          //right: -173px;
+          //top: 10px;
+          //font-size: 8px;
+          //-webkit-transform: rotate(180deg);
+          //transform: rotate(180deg);
+        }
+      }
+
+      &.label {
+        top: 50%;
+        left: 53%;
+        font-size: 10px;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        color: $black;
+      }
+
+      &.united-kingdom {
+        background: $uk-lt;
+        top: 18%;
+      }
+
+      &.germany {
+        background: $germany-lt;
+        top: 26%;
+      }
+
+      &.france {
+        background: $france-lt;
+        top: 34%;
+      }
+
+      &.switzerland {
+        background: $switzerland-lt;
+        top: 55%;
+      }
+
+      &.italy {
+        background: $italy-lt;
+        top: 62%;
+      }
+
+      &.spain {
+        background: $spain-lt;
+        top: 68%;
+      }
+
+      &.portugal {
+        background: $portugal-lt;
+        top: 76%;
+      }
+    }
+  }
+}
+
+/* Map Info */
+
+.panel-object-info {
+  div.seattime div.image {
+    &.united-kingdom div.text {
+      color: $uk;
+    }
+
+    &.germany div.text {
+      color: $germany;
+    }
+
+    &.france div.text {
+      color: $france;
+    }
+
+    &.switzerland div.text {
+      color: $switzerland;
+    }
+
+    &.spain div.text {
+      color: $spain;
+    }
+
+    &.italy div.text {
+      color: $italy;
+    }
+
+    &.portugal div.text {
+      color: $portugal;
+    }
+  }
+}
+
+/* Map Pins */
+
+.jqvmap-pin {
+  display: block;
+
+  &[for="united-kingdom"] {
+    top: 0;
+    left: 0;
+  }
+
+  &[for="germany"] {
+    top: 0;
+    left: 0;
+  }
+
+  &[for="france"] {
+    top: 0;
+    left: 0;
+  }
+
+  &[for="switzerland"] {
+    top: 0;
+    left: 0;
+  }
+
+  &[for="italy"] {
+    top: 0;
+    left: 0;
+  }
+
+  &[for="spain"] {
+    top: 0;
+    left: 0;
+  }
+
+  &[for="portugal"] {
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Additional Text on SVG */
+
+#vmap text {
+  .mapH1,
+  .mapH2 {
+    fill: $white;
+    font-family: 'Lato', sans-serif, Verdana;
+    font-size: 10px;
+  }
+
+  .mapH1 {
+    text-transform: capitalize;
+  }
+
+  .mapH2 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+/* Ipad Only */
+/*
+
+@media screen and (max-width: 1024px) {
+  .map-legend {
+    height: 100%;
+    top: 0;
+
+    ul li {
+      &.spain {}
+      &.france {}
+    }
+  }
+}
+
+*/

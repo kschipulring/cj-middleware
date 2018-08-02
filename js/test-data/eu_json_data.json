@@ -1,0 +1,98 @@
+[
+  {
+    "cat_id": 36,
+    "cat_url_title": "eu",
+    "cat_name": "EU",
+    "parent_id": 0,
+    "parent_url_title": "",
+    "parent_name": "",
+    "unlockorder": 1,
+    "color": "#F3F2EA",
+    "number_of_stops": "",
+    "minutes_to_finish": ""
+  },
+  {
+    "cat_id": 37,
+    "cat_url_title": "unitedkingdom",
+    "cat_name": "United Kingdom",
+    "parent_id": 0,
+    "parent_url_title": "eu",
+    "parent_name": "Europe",
+    "unlockorder": 1,
+    "color": "#F3F2EA",
+    "number_of_stops": "",
+    "minutes_to_finish": ""
+  },
+  {
+    "cat_id": 38,
+    "cat_url_title": "germany",
+    "cat_name": "Germany",
+    "parent_id": 0,
+    "parent_url_title": "eu",
+    "parent_name": "Europe",
+    "unlockorder": 2,
+    "color": "#F3F2EA",
+    "number_of_stops": "",
+    "minutes_to_finish": ""
+  },
+  {
+    "cat_id": 39,
+    "cat_url_title": "france",
+    "cat_name": "France",
+    "parent_id": 0,
+    "parent_url_title": "eu",
+    "parent_name": "Europe",
+    "unlockorder": 3,
+    "color": "#F3F2EA",
+    "number_of_stops": "",
+    "minutes_to_finish": ""
+  },
+  {
+    "cat_id": 40,
+    "cat_url_title": "italy",
+    "cat_name": "Italy",
+    "parent_id": 0,
+    "parent_url_title": "eu",
+    "parent_name": "Europe",
+    "unlockorder": 4,
+    "color": "#F3F2EA",
+    "number_of_stops": "",
+    "minutes_to_finish": ""
+  },
+  {
+    "cat_id": 41,
+    "cat_url_title": "spain",
+    "cat_name": "Spain",
+    "parent_id": 0,
+    "parent_url_title": "",
+    "parent_name": "",
+    "unlockorder": 2,
+    "color": "#F3F2EA",
+    "number_of_stops": "",
+    "minutes_to_finish": ""
+  },
+  {
+    "cat_id": 42,
+    "cat_url_title": "switzerland",
+    "cat_name": "Switzerland",
+    "parent_id": 8,
+    "parent_url_title": "thehighline",
+    "parent_name": "The High Line",
+    "unlockorder": 1,
+    "color": "#F3F2EA",
+    "number_of_stops": "",
+    "minutes_to_finish": ""
+  },
+  {
+    "cat_id": 43,
+    "cat_url_title": "portugal",
+    "cat_name": "Portugal",
+    "parent_id": 0,
+    "parent_url_title": "",
+    "parent_name": "",
+    "unlockorder": 3,
+    "color": "#F3F2EA",
+    "number_of_stops": "",
+    "minutes_to_finish": ""
+  }
+]

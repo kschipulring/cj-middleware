@@ -1,0 +1,34 @@
+<div class="itinerary-block">
+	<div class="itinerary-header row"><h3>{exp:transcribe:replace name="myitinerary"}</h3></div>
+</div>
+<div id="accordion" class="panel-group">
+	<div class="panel panel-default panel-one">
+		<button class="btn-toggle" type="button" data-toggle="collapse" data-target="#monthlyfocus" data-parent="#accordion">
+			<span class="is-open glyphicon glyphicon-plus plusMinus"></span>
+			<span class="btn-title">{exp:transcribe:replace name="monthlyfocusitinerary"}</span>
+		</button>
+		<div id="monthlyfocus" class="panel-collapse collapse">
+			<div class="panel-body monthly-focus-panel">
+			</div>				
+		</div>	
+	</div>
+	<div class="panel panel-default panel-two">
+		<button class="btn-toggle" type="button" data-toggle="collapse" data-target="#mlapprentice" data-parent="#accordion">
+			<span class="is-open glyphicon glyphicon-minus plusMinus"></span>
+			<span class="btn-title">
+			{exp:transcribe:replace name="nycjourneyitinerary"}&nbsp;&#124;&nbsp;<strong>{exp:transcribe:replace name="mlapprenticeitinerary"}</strong></span>
+		</button>
+		<div id="mlapprentice" class="panel-collapse collapse in">
+			<div id="accordion2" class="panel-group"></div>
+		</div>		
+		
+		<!--<button class="btn-toggle" type="button" data-toggle="collapse" data-target="#mlambassador" data-parent="#accordion">-->
+			<!--<span class="is-open glyphicon glyphicon-minus plusMinus"></span>-->
+			<!--<span class="btn-title">-->
+			<!--{exp:transcribe:replace name="eujourneyitinerary"}&nbsp;&#124;&nbsp;<strong>{exp:transcribe:replace name="mlambassadoritinerary"}</strong></span>-->
+		<!--</button>-->
+		<!--<div id="mlambassador" class="panel-collapse collapse in">-->
+			<!--<div id="accordion2" class="panel-group"></div>-->
+		<!--</div>-->
+	</div>	
+</div>

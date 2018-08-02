@@ -1,0 +1,180 @@
+{
+	"additionalContent": [
+		{
+			"region": "thehighlineneighborhood",
+			"transform": "matrix(0.2939 -0.9558 0.9558 0.2939 480.6837 589.4078)",
+			"content": [
+				{"text": "The High Line", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "COACH品牌", "x": 2, "y": 18, "class": "st27 st26"}
+			]
+		},
+		{
+			"region": "columbuscircle",
+			"transform": "matrix(0.8895 0.457 -0.457 0.8895 645.2094 186.5546)",
+			"content": [
+				{"text": "Columbus Circle", "x": 3, "y": 0, "class": "st25 stcc"},
+				{"text": "现代奢华店铺之旅", "x": -3, "y": 20, "class": "st27 stcc"}
+			]
+		},
+		{
+			"region": "garmentdistrict",
+			"transform": "matrix(0.4905 -0.8715 0.8715 0.4905 651.1349 483.1003)",
+			"content": [
+				{"text": "Garment District", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "女士手袋基础", "x": 12, "y": 18, "class": "st27 st26"}
+			]
+		},
+		{
+			"region": "murrayhill",
+			"transform": "matrix(0.4483 -0.8939 0.8939 0.4483 782.1896 534.5327)",
+			"content": [
+				{"text": "Murray Hill", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "男士手袋基础", "x": -7, "y": 18, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "hellskitchen",
+			"transform": "matrix(0.4952 -0.8688 0.8688 0.4952 548.3871 413.2535)",
+			"content": [
+				{"text": "Hell's Kitchen", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "小皮件基础", "x": 5, "y": 18, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "theaterdistrict",
+			"transform": "matrix(0.4832 -0.8755 0.8755 0.4832 705.0934 334.658)",
+			"content": [
+				{"text": "Theater District", "x": 0, "y": 0, "class": "st25 sttd"},
+				{"text": "三要素", "x": 25, "y": 22, "class":"st27 sttd"}
+			]
+		},				
+		{
+			"region": "midtowneast",
+			"transform": "matrix(0.8793 0.4762 -0.4762 0.8793 831.5735 335.053)",
+			"content": [
+				{"text": "Midtown East", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "现代奢华的欢迎", "x": -6, "y": 20, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "clinton",
+			"transform": "matrix(0.877 0.4804 -0.4804 0.877 628.8459 249.6925)",
+			"content": [
+				{"text": "Clinton", "x": 0, "y": 0, "class": "st25 stcl"},
+				{"text": "同时款待多位顾客", "x": -30, "y": 18, "class":"st27 stcl"}
+			]
+		},
+		{
+			"region": "chelsea",
+			"transform": "matrix(0.8847 0.4662 -0.4662 0.8847 596.7166 579.8589)",
+			"content": [
+				{"text": "Chelsea", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "激发对品牌的渴望", "x": -30, "y": 22, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "soho",
+			"transform": "matrix(0.8512 0.5249 -0.5249 0.8512 530.3207 842.9035)",
+			"content": [
+				{"text": "Soho", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "皮革基础", "x": -12, "y": 20, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "westvillage",
+			"transform": "matrix(0.5028 -0.8644 0.8644 0.5028 497.0017 738.5007)",
+			"content": [
+				{"text": "West Village", "x": 0, "y": 0, "class": "st25 st31"},
+				{"text": "说故事", "x": 15, "y": 20, "class":"st27 st31"}
+			]
+		},   
+		{
+			"region": "greenwichvillage",
+			"transform": "matrix(0.8796 0.4758 -0.4758 0.8796 601.5169 743.0641)",
+			"content": [
+				{"text": "Greenwich Village", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "品质及工艺基础", "x": 4, "y": 20, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "gramercy",
+			"transform": "matrix(0.8898 0.4564 -0.4564 0.8898 739.1454 656.7009)",
+			"content": [
+				{"text": "Gramercy", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "渲染产品", "x": 2, "y": 22, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "eastvillage",
+			"transform": "matrix(0.4211 -0.907 0.907 0.4211 752.6664 872.3807)",
+			"content": [
+				{"text": "East Village", "x": 0, "y": 0, "class": "st25 stev"},
+				{"text": "价格三明治技巧", "x": -15, "y": 18, "class":"st27 stev"}
+			]
+		},
+		{
+			"region": "upperwestsideneighborhood",
+			"transform": "matrix(0.4706 -0.8823 0.8823 0.4706 712.5534 119.5164)",
+			"content": [
+				{"text": "Upper West Side", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "个性化体验", "x": 13, "y": 20, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "centralpark",
+			"transform": "matrix(0.4744 -0.8803 0.8803 0.4744 828.4642 138.2979)",
+			"content": [
+				{"text": "Central Park", "x": 0, "y": 0, "class": "st25 stcp"},
+				{"text": "了解顾客", "x": 5, "y": 20, "class":"st27 stcp"}
+			]
+		},   
+		{
+			"region": "uppereastside",
+			"transform": "matrix(0.4696 -0.8829 0.8829 0.4696 903.2277 189.8457)",
+			"content": [
+				{"text": "Upper East Side", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "推荐及展示产品", "x": -2, "y": 20, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "yorkville",
+			"transform": "matrix(0.4765 -0.8792 0.8792 0.4765 1023.8438 184.0225)",
+			"content": [
+				{"text": "Yorkville", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "处理异议及完成销售", "x": -40, "y": 20, "class":"st27 st26"}
+			]
+		},  
+		{
+			"region": "tribeca",
+			"transform": "matrix(0.8824 0.4706 -0.4706 0.8824 477.6523 932.2043)",
+			"content": [
+				{"text": "Tribeca", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "认识竞争品牌", "x": -20, "y": 18, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "financialdistrict",
+			"transform": "matrix(0.8964 0.4432 -0.4432 0.8964 398.7719 1034.9568)",
+			"content": [
+				{"text": "Financial District", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "零售数学", "x": 20, "y": 22, "class":"st27 st26"}
+			]
+		},  
+		{
+			"region": "lowereastside",
+			"transform": "matrix(0.9294 0.369 -0.369 0.9294 671.2167 947.5052)",
+			"content": [
+				{"text": "Lower East Side", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "营运", "x": 30, "y": 24, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "chinatown",
+			"transform": "matrix(0.3946 -0.9189 0.9189 0.3946 575.6385 1035.7544)",
+			"content": [
+				{"text": "Chinatown", "x": -10, "y": 10, "class": "st25 stct"},
+				{"text": "视觉陈列", "x": -5, "y": 30, "class":"st27 stct"}
+			]
+		}
+	]
+}

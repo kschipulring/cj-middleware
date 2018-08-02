@@ -1,0 +1,238 @@
+/* Map Legend */
+
+.map-legend {
+  height: calc(96% - 80px);
+  top: 3%;
+  position: absolute;
+  width: 52px;
+  right: -52px;
+  z-index: 1000;
+  background: #FFF;
+  border-left: 1px solid #CCC;
+}
+
+.map-legend ul {
+  list-style-type: none;
+
+  li {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -9px;
+
+    &.active {
+      border: 3px solid rgba(255, 255, 255, .4);
+    }
+    &.active:before {
+      content: attr(data-title);
+      position: absolute;
+      width: 140px;
+      border-bottom: 2px dotted rgba(0, 0, 0, .1);
+      right: -167px;
+      top: 3px;
+      text-align: left;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    &.active:after {
+      font-family: 'icomoon';
+      content: '\e907';
+      color: rgba(0, 0, 0, .5);
+      position: absolute;
+      right: -173px;
+      top: 13px;
+      font-size: 8px;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+
+    &.uptown {
+      background: rgb(75, 148, 105);
+      top: 2%;
+    }
+    &.midtown {
+      background: rgb(135, 181, 204);
+      top: 12%;
+    }
+    &.midtownsouth {
+      background: rgb(227, 201, 104);
+      top: 24%;
+    }
+    &.label {
+      top: 48%;
+      left: 53%;
+      font-size: 10px;
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      color: #000;
+    }
+    &.thehighline {
+      background: rgb(156, 124, 99);
+      top: 54%;
+    }
+    &.downtown {
+      background: rgb(152, 126, 153);
+      top: 70%;
+    }
+    &.lowermanhattan {
+      background: rgb(172, 172, 172);
+      top: 90%;
+    }
+  }
+}
+
+
+/* Map Info */
+
+.panel-object-info div.stops div.image.thehighline{
+  background-image: url("../../images/circle/brown-stops-68x68.png");
+}
+.panel-object-info div.stops div.image.lowermanhattan{
+  background-image: url("../../images/circle/grey-stops-68x68.png");
+}
+.panel-object-info div.stops div.image.downtown{
+  background-image: url("../../images/circle/purple-stops-68x68.png");
+}
+.panel-object-info div.stops div.image.midtownsouth{
+  background-image: url("../../images/circle/yellow-stops-68x68.png");
+}
+.panel-object-info div.stops div.image.midtown{
+  background-image: url("../../images/circle/blue-stops-68x68.png");
+}
+.panel-object-info div.stops div.image.uptown{
+  background-image: url("../../images/circle/green-stops-68x68.png");
+}
+
+.panel-object-info div.seattime div.image.thehighline{
+  background-image: url("../../images/circle/brown-minutes-68x68.png");
+}
+.panel-object-info div.seattime div.image.lowermanhattan{
+  background-image: url("../../images/circle/grey-minutes-68x68.png");
+}
+.panel-object-info div.seattime div.image.downtown{
+  background-image: url("../../images/circle/purple-minutes-68x68.png");
+}
+.panel-object-info div.seattime div.image.midtownsouth{
+  background-image: url("../../images/circle/yellow-minutes-68x68.png");
+}
+.panel-object-info div.seattime div.image.midtown{
+  background-image: url("../../images/circle/blue-minutes-68x68.png");
+}
+.panel-object-info div.seattime div.image.uptown{
+  background-image: url("../../images/circle/green-minutes-68x68.png");
+}
+
+.panel-object-info div.seattime div.image.thehighline div.text{
+  color: #9C7C63;
+}
+.panel-object-info div.seattime div.image.lowermanhattan div.text{
+  color: #ACACAC;
+}
+.panel-object-info div.seattime div.image.downtown div.text{
+  color: #876F87;
+}
+.panel-object-info div.seattime div.image.midtownsouth div.text{
+  color: #E5BF27;
+}
+.panel-object-info div.seattime div.image.midtown div.text{
+  color: #87B5CC;
+}
+.panel-object-info div.seattime div.image.uptown div.text{
+  color: #4A9369;
+}
+
+
+/* Map Pins */
+
+#jqvmap1_clinton_pin .map-pin .pin-img {
+  top: 20px;
+  left: -15px;
+}
+
+#jqvmap1_upperwestsideneighborhood_pin .map-pin .pin-img {
+  top: 25px;
+  left: -15px;
+}
+
+#jqvmap1_centralpark_pin .map-pin .pin-img {
+  top: 25px;
+  left: -15px;
+}
+
+#jqvmap1_uppereastside_pin .map-pin .pin-img {
+  top: 25px;
+  left: -60px;
+}
+
+#jqvmap1_yorkville_pin .map-pin .pin-img {
+  top: 50px;
+  left: -25px;
+}
+
+
+/* Additional Text on SVG */
+
+.st25{font-family:'Lato'; color: #000000;}
+.st26{font-size:13.5px;}
+.st27{font-family:'Lato'; font-weight: bold; color: #000000; text-transform: uppercase;}
+.st28{font-size:10px;}
+.st29{font-size:12.9534px;}
+.st30{font-size:11px;}
+.st31{font-size:12.8492px;}
+.st32{font-size:11px;}
+.st33{font-size:11.9144px;}
+
+
+/* Ipad Only */
+
+@media screen and (max-width: 1024px) {
+  .map-legend { height: 100%; top: 0; }
+  .map-legend ul li.label { top: 44.5%; font-size: 9px; }
+
+  .map-legend ul li.lower { top: auto; bottom: 15%; }
+  .map-legend ul li.upper { top: 4%; }
+  .map-legend ul li.midtown { top: 15%; }
+  .map-legend ul li.downtown { top: auto; bottom: 32%; }
+  .map-legend ul li.midtown-south { top: 26%; }
+
+  .panel-object-info div.stops div.image.thehighline{
+    background-image: url("../../images/circle/brown-stops-61x61.png");
+  }
+  .panel-object-info div.stops div.image.lowermanhattan{
+    background-image: url("../../images/circle/grey-stops-61x61.png");
+  }
+  .panel-object-info div.stops div.image.downtown{
+    background-image: url("../../images/circle/purple-stops-61x61.png");
+  }
+  .panel-object-info div.stops div.image.midtownsouth{
+    background-image: url("../../images/circle/yellow-stops-61x61.png");
+  }
+  .panel-object-info div.stops div.image.midtown{
+    background-image: url("../../images/circle/blue-stops-61x61.png");
+  }
+  .panel-object-info div.stops div.image.uptown{
+    background-image: url("../../images/circle/green-stops-61x61.png");
+  }
+
+  .panel-object-info div.seattime div.image.thehighline{
+    background-image: url("../../images/circle/brown-minutes-61x61.png");
+  }
+  .panel-object-info div.seattime div.image.lowermanhattan{
+    background-image: url("../../images/circle/grey-minutes-61x61.png");
+  }
+  .panel-object-info div.seattime div.image.downtown{
+    background-image: url("../../images/circle/purple-minutes-61x61.png");
+  }
+  .panel-object-info div.seattime div.image.midtownsouth{
+    background-image: url("../../images/circle/yellow-minutes-61x61.png");
+  }
+  .panel-object-info div.seattime div.image.midtown{
+    background-image: url("../../images/circle/blue-minutes-61x61.png");
+  }
+  .panel-object-info div.seattime div.image.uptown{
+    background-image: url("../../images/circle/green-minutes-61x61.png");
+  }
+}

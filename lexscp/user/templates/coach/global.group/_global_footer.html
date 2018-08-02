@@ -1,0 +1,222 @@
+		{if logged_in}
+
+        <div id="menu-dimmer"></div>
+
+        <div id="video-modal">
+            <div class="inner">
+                <i class="icon-close-btn"></i>
+                <video id="video-coach" width="960" height="540" class="video-js vjs-big-play-centered vjs-default-skin" controls>
+                <source
+                src=""
+                type="application/x-mpegURL"
+                id="video-source" />
+                </video>
+            </div>
+        </div>
+
+        <div id="pdf-modal">
+          <div class="inner">
+            <div id="pdf-preloader">
+              <img src="/assets/pdf-preloader.gif" />
+            </div>
+            <iframe src></iframe>
+            <i class="icon-close-btn"></i>
+          </div>
+        </div>
+
+        <div class="language-modal" style="display: none;">
+            <div class="dark-bg">
+                <div class="overlay-heading">
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 vertical-center"></div><!--
+                     --><div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right close-overlay vertical-center">
+                    <!-- <span class="glyphicon glyphicon-remove-sign">&nbsp;</span> -->
+                    <i class="icon-close-btn"></i>
+                </div>
+                </div>
+                <div class="row language-login">
+                    <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-6 col-md-6 col-sm-6 language-model-list">
+                        <p>{exp:transcribe:replace name="selectlanguage"}</p>
+                    </div>
+                </div>
+                <form action="{exp:transcribe:action_url}" method="post" class="change-language-form">
+                    <input type="hidden" name="XID" value="{XID_HASH}">
+                    <input name="lang" value="en" id="change-lang-hidden-input">
+                </form>
+            </div>
+        </div>
+
+        <div id="off-canvas-menu">
+            <i class="icon-menu-cross"></i>
+            <div class="inner">
+                <ul>
+                    <li>
+                        <a href="{site_url}" class="coach-nav-link-todo">{exp:transcribe:replace name="monthlyfocus"}</a>
+                    </li>
+                    <li>
+                        <a href="mapJourney" class="coach-nav-link">{exp:transcribe:replace name="myjourney"}</a>
+                    </li>
+                    <li>
+                        <a href="myProfileBlock" class="coach-nav-link">{exp:transcribe:replace name="myprofile"}</a>
+                    </li>
+                    <li>
+						<a href="#" class="off-canvas-video objective-link {{type}} play-video {{disabled}}" id="143" attr-parent="1" attr-record-id="0" attr-location="0">
+						{exp:transcribe:replace name="aboutcoach"}</a>
+                    </li>
+                    <li>
+                        <a class="translator-icon">{exp:transcribe:replace name="changelanguage"}</a>
+                    </li>
+                    <li>
+                        <a href="{path='logout'}" class="logout-link"></i>{exp:transcribe:replace name="logout"}</a>
+                    </li>
+                    <script>
+						var language = $("html").attr("lang");
+						var vidId = '';
+						if(language == 'en'){
+							vidId = '143';
+							$(".off-canvas-video").attr("id", vidId);
+						}
+						else if(language == 'ja'){
+							vidId = '2377';
+							$(".off-canvas-video").attr("id", vidId);
+						}
+						else if(language == 'ko'){
+							vidId = '2378';
+							$(".off-canvas-video").attr("id", vidId);
+						}
+						else if(language == 'zh-Hans'){
+							vidId = '2379';
+							$(".off-canvas-video").attr("id", vidId);
+						}
+						else if(language == 'zh-Hant'){
+							vidId = '2380';
+							$(".off-canvas-video").attr("id", vidId);
+						}
+						</script>
+                </ul>
+            </div>
+        </div>
+
+
+        <script>
+          $(function() {
+            $('body').on('click', '.logout-link', function(e){
+              console.log(this);
+              window.location.href = this.href;
+              windowHandle = window.open('https://www.coachjourney.com/assets/coachjourney', "pdfTab", "status=1");
+              windowHandle.close();
+            });
+          });
+        </script>
+
+		  
+        <footer id="main-footer">
+            
+            <div id="main-logo" class="logo">
+                <a href="{site_url}">
+                    <img src="{site_url}assets/coach-journey-logo.svg" />
+                </a>
+            </div>
+
+            <div class="avatar">
+                <a href="myProfileBlock" class="coach-nav-link avatar-link">
+                    <!-- Dynamic Avatar From User account goes here -->
+                    <span class="nav-avatar"></span>
+                </a>
+            </div>
+
+            <div class="user associate-titles">
+                <div class="assoc-name"></div>
+                <div class="assoc-rank-footer"></div>
+            </div>
+
+
+            <div class="associate-completion">
+                <div class="description">
+                    <span class="current-month"></span><br />
+                {exp:transcribe:replace name="completionfooter"}
+                </div>
+
+
+                <div class="data-circle global-footer-data-circle">
+                    <div class="circle-line progress">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
+                             <circle cx="50" cy="50" r="45" class="data-course-completion-color" stroke-width="8" fill="none" />
+                            <g>
+                                <line x1="50" y1="50" x2="50" y2="50" stroke="rgba(255,255,255,1.0) "class="course-circle" />
+                                <text x="50" y="57" text-anchor="middle" font-size="20" font-weight="600" class="data-assessments-complete"></text>
+                            </g>
+                            <g>
+                                <circle class="progress-assessment-completion-circle" cx="-50" cy="-50" r="48" stroke-dashoffset="" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="translator-icon">
+                <img src="assets/language-icon.png" />
+            </div>
+
+            <div class="globe">
+                <a href="mapJourney" class="globe coach-nav-link">
+                    <i class="icon-world-location"></i>
+                </a>
+            </div>
+
+            <div class="menu-burger">
+                <i class="icon-hamburger-menu"></i>
+            </div>
+               
+        </footer>
+
+        <script id="content-navigation" type="x-handlebars-template"></script>
+		{/if}
+
+        {if logged_out}<!--Logged out-->{/if}
+        <script>
+          (function(){
+            if(window.BOOMR && window.BOOMR.version){return;}
+            var dom,doc,where,iframe = document.createElement('iframe'),win = window;
+
+            function boomerangSaveLoadTime(e) {
+              win.BOOMR_onload=(e && e.timeStamp) || new Date().getTime();
+            }
+            if (win.addEventListener) {
+              win.addEventListener("load", boomerangSaveLoadTime, false);
+            } else if (win.attachEvent) {
+              win.attachEvent("onload", boomerangSaveLoadTime);
+            }
+
+            iframe.src = "javascript:false";
+            iframe.title = ""; iframe.role="presentation";
+            (iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+            where = document.getElementsByTagName('script')[0];
+            where.parentNode.insertBefore(iframe, where);
+
+            try {
+              doc = iframe.contentWindow.document;
+            } catch(e) {
+              dom = document.domain;
+              iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+              doc = iframe.contentWindow.document;
+            }
+            doc.open()._l = function() {
+              var js = this.createElement("script");
+              if(dom) this.domain = dom;
+              js.id = "boomr-if-as";
+              js.src = '//c.go-mpulse.net/boomerang/' +
+                'TKLWU-3V3T4-FAGXN-LJX4G-3JY7A';
+              BOOMR_lstart=new Date().getTime();
+              this.body.appendChild(js);
+            };
+            doc.write('<body onload="document._l();">');
+            doc.close();
+          })();
+        </script>
+
+
+        <script type="text/javascript" src="{site_url}js/gsap.js?v=1"></script>
+        <script type="text/javascript" src="{site_url}js/coach.js?v=8"></script>
+        
+    </body>
+</html>
