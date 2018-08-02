@@ -1,0 +1,233 @@
+/* 3.0 - Font styling */
+@import "mixins";
+
+//@font-face {
+//  font-family: 'icomoon';
+//  src: url('../fonts/icomoon.eot?ufcksp');
+//  src: url('../fonts/icomoon.eot?ufcksp#iefix') format("embedded-opentype"), url('../fonts/icomoon.ttf?ufcksp') format("truetype"), url('../fonts/icomoon.woff?ufcksp') format("woff"), url('../fonts/icomoon.svg?ufcksp#icomoon') format("svg");
+//  font-weight: normal;
+//  font-style: normal;
+//}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?ufcksp');
+  src: url('../fonts/icomoon.eot?ufcksp#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?ufcksp') format('truetype'),
+  url('../fonts/icomoon.woff?ufcksp') format('woff'),
+  url('../fonts/icomoon.svg?ufcksp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 3.0 - Font styling */
+
+div.monthly-focus-content div.row {
+  h1, h2, h4 {
+    font-family: 'Clarendon-urw', serif;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  h1 {
+    letter-spacing: 1px;
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3, div.class-link, div.misc-link, div.misc-nolink {
+    font-family: 'lato','Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: #666;
+    height: 30px;
+    font-weight: 600;
+  }
+
+  h3 {
+    height: auto;
+  }
+
+  .btn-black {
+    &.class-link,
+    &.misc-link,
+    &.misc-nolink {
+      color: #fff;
+      background-color: black;
+      z-index: 10;
+
+      &:hover {
+        color: #fff;
+        background-color: #666;
+      }
+
+      &.open,
+      &.active {
+        color: #666;
+        background-color: white;
+      }
+
+      &:hover {
+        color: #666;
+        background-color: white;
+      }
+
+      &.open,
+      &.active {
+        &:hover {
+          color: #666;
+          background-color: white;
+        }
+      }
+    }
+  }
+
+  h3 {
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+
+  @include screen-size(med-down) {
+    h1 {
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 16pt;
+    }
+  }
+
+  @include screen-size(sm-down) {
+    h1 {
+      font-size: 23px;
+      letter-spacing: normal;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 11px;
+      letter-spacing: normal;
+      text-align: center;
+      margin: 0 0 5px 0;
+      padding: 0;
+      height: auto;
+    }
+
+    h4 {
+      font-size: 17px;
+      letter-spacing: normal;
+      text-align: center;
+      padding-top: 1px;
+    }
+  }
+}
+
+div.course-detail {
+  h3 {
+    font-size: 11px;
+    letter-spacing: normal;
+    text-align: center;
+    margin: 0 0 5px 0;
+    padding: 0;
+    height: auto;
+  }
+  @include screen-size(sm-down) {
+    .course-detail h3 {
+      margin: 0;
+    }
+  }
+}
+
+div.row p {
+  font-family: 'lato','Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+div.global-footer > div.row > div.associate-info {
+  font-family: 'lato','Lato', sans-serif;
+}
+
+div.objective-list > ul > li > div {
+  font-family: 'lato','Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  width: 100%;
+}
+
+div.class-link, div.misc-link, div.misc-nolink {
+  font-weight: 600;
+}
+
+/*
+**********************************************
+    ICON FONTS
+**********************************************
+*/
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close-btn:before {
+  content: "\e901";
+  cursor: pointer;
+}
+
+.icon-hamburger-menu:before {
+  content: "\e900";
+  font-size: 26px;
+  color: #fff;
+}
+
+.icon-lense:before {
+  content: "\e902";
+}
+
+.icon-lock:before {
+  content: "\e903";
+}
+
+.icon-menu-arrow:before {
+  content: "\e907";
+}
+
+.icon-menu-cross:before {
+  content: "\e906";
+}
+
+.icon-questionmark:before {
+  content: "\e904";
+  font-size: 22px;
+}
+
+.icon-world-location:before {
+  content: "\e905";
+}
+
+.passport-svg {
+  width: 65px;
+}
+
+/* ********************************************** */

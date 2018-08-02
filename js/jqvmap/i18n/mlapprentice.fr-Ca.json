@@ -1,0 +1,206 @@
+{
+	"additionalContent": [
+		{
+			"region": "thehighlineneighborhood",
+			"transform": "matrix(0.2939 -0.9558 0.9558 0.2939 480.6837 589.4078)",
+			"content": [
+				{"text": "The High Line", "x": 0, "y": -1, "class": "st25 st26"},
+				{"text": "LA MARQUE COACH", "x": -25, "y": 19, "class": "st27 st26"}
+			]
+		},
+		{
+			"region": "columbuscircle",
+			"transform": "matrix(0.8895 0.457 -0.457 0.8895 645.2094 186.5546)",
+			"content": [
+				{"text": "Columbus Circle", "x": 3, "y": -8, "class": "st25 stcc"},
+				{"text": "VISITE D’UNE", "x": 8, "y": 6, "class": "st27 stcc"},
+				{"text": "BOUTIQUE", "x": 15, "y": 19, "class": "st27 stcc"},
+				{"text": "MODERN LUXURY", "x": -10, "y": 32, "class": "st27 stcc"}
+			]
+		},
+		{
+			"region": "garmentdistrict",
+			"transform": "matrix(0.4905 -0.8715 0.8715 0.4905 651.1349 483.1003)",
+			"content": [
+				{"text": "Garment District", "x": 0, "y": -10, "class": "st25 st26"},
+				{"text": "INTRODUCTION AUX", "x": -15, "y": 10, "class": "st27 st26"},
+				{"text": "SACS POUR FEMMES", "x": -14, "y": 30, "class": "st27 st26"}
+			]
+		},
+		{
+			"region": "murrayhill",
+			"transform": "matrix(0.4483 -0.8939 0.8939 0.4483 782.1896 534.5327)",
+			"content": [
+				{"text": "Murray Hill", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "INTRODUCTION AUX", "x": -35, "y": 20, "class":"st27 st26"},
+				{"text": "SACS POUR HOMME", "x": -32, "y": 40, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "hellskitchen",
+			"transform": "matrix(0.4952 -0.8688 0.8688 0.4952 548.3871 413.2535)",
+			"content": [
+				{"text": "Hell's Kitchen", "x": 0, "y": -15, "class": "st25 st26"},
+				{"text": "INTRODUCTION A LA ", "x": -28, "y": 5, "class":"st27 st26"},
+				{"text": "PETITE MAROQUINERIE ", "x": -39, "y": 25, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "theaterdistrict",
+			"transform": "matrix(0.4832 -0.8755 0.8755 0.4832 705.0934 334.658)",
+			"content": [
+				{"text": "Theater District", "x": -3, "y": 0, "class": "st25 sttd"},
+				{"text": "LA PUISSANCE", "x": -7, "y": 18, "class":"st27 sttd"},
+				{"text": "TROIS", "x": 25, "y": 36, "class":"st27 sttd"}
+			]
+		},				
+		{
+			"region": "midtowneast",
+			"transform": "matrix(0.8793 0.4762 -0.4762 0.8793 831.5735 335.053)",
+			"content": [
+				{"text": "Midtown East", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "L'ACCUEIL", "x": 5, "y": 20, "class":"st27 st26"},
+				{"text": "\"MODERN LUXURY\"", "x": -25, "y": 40, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "clinton",
+			"transform": "matrix(0.877 0.4804 -0.4804 0.877 628.8459 249.6925)",
+			"content": [
+				{"text": "Clinton", "x": 0, "y": -8, "class": "st25 stcl"},
+				{"text": "ACCUEILLIR", "x": -15, "y": 7, "class":"st27 stcl"},
+				{"text": "PLUSIEURS", "x": -12, "y": 22, "class":"st27 stcl"},
+				{"text": "CLIENTS A LA FOIS", "x": -43, "y": 37, "class":"st27 stcl"}
+			]
+		},
+		{
+			"region": "chelsea",
+			"transform": "matrix(0.8847 0.4662 -0.4662 0.8847 596.7166 579.8589)",
+			"content": [
+				{"text": "Chelsea", "x": -10, "y": 0, "class": "st25 st26"},
+				{"text": "FAIRE REVER DE", "x": -33, "y": 20, "class":"st27 st26"},
+				{"text": "LA MARQUE", "x": -20, "y": 40, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "soho",
+			"transform": "matrix(0.8512 0.5249 -0.5249 0.8512 530.3207 842.9035)",
+			"content": [
+				{"text": "Soho", "x": -10, "y": 0, "class": "st25 st26"},
+				{"text": "INTRODUCTION AU CUIR", "x": -70, "y": 20, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "westvillage",
+			"transform": "matrix(0.5028 -0.8644 0.8644 0.5028 497.0017 738.5007)",
+			"content": [
+				{"text": "West Village", "x": 0, "y": -15, "class": "st25 st31"},
+				{"text": "L'ART DE", "x": 9, "y": 5, "class":"st27 st31"},
+				{"text": "RACONTER", "x": 2, "y": 25, "class":"st27 st31"},
+				{"text": "UNE HISTOIRE", "x": -5, "y": 45, "class":"st27 st31"}
+			]
+		},   
+		{
+			"region": "greenwichvillage",
+			"transform": "matrix(0.8796 0.4758 -0.4758 0.8796 601.5169 743.0641)",
+			"content": [
+				{"text": "Greenwich Village", "x": 0, "y": -10, "class": "st25 st26"},
+				{"text": "INTRODUCTION A LA", "x": -10, "y": 10, "class":"st27 st26"},
+				{"text": "QUALITE ET AU", "x": 7, "y": 30, "class":"st27 st26"},
+				{"text": "SAVOIR-FAIRE", "x": 10, "y": 50, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "gramercy",
+			"transform": "matrix(0.8898 0.4564 -0.4564 0.8898 739.1454 656.7009)",
+			"content": [
+				{"text": "Gramercy", "x": 0, "y": -10, "class": "st25 st26"},
+				{"text": "PARLER DU PRODUIT", "x": -37, "y": 10, "class":"st27 st26"},
+				{"text": "DE FAÇON", "x": 0, "y": 30, "class":"st27 st26"},
+				{"text": "CONVAINCANTE", "x": -20, "y": 50, "class":"st27 st26"}
+			]
+		},
+		{
+			"region": "eastvillage",
+			"transform": "matrix(0.4211 -0.907 0.907 0.4211 752.6664 872.3807)",
+			"content": [
+				{"text": "East Village", "x": -10, "y": -10, "class": "st25 stev"},
+				{"text": "TECHNIQUE", "x": -15, "y": 10, "class":"st27 stev"},
+				{"text": "D'INTERCALAGE", "x": -30, "y": 30, "class":"st27 stev"},
+				{"text": "DU PRIX", "x": -5, "y": 50, "class":"st27 stev"}
+			]
+		},
+		{
+			"region": "upperwestsideneighborhood",
+			"transform": "matrix(0.4706 -0.8823 0.8823 0.4706 712.5534 119.5164)",
+			"content": [
+				{"text": "Upper West Side", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "PERSONNALISER", "x": -2, "y": 20, "class":"st27 st26"},
+				{"text": "L’EXPÉRIENCE", "x": 8, "y": 40, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "centralpark",
+			"transform": "matrix(0.4744 -0.8803 0.8803 0.4744 828.4642 138.2979)",
+			"content": [
+				{"text": "Central Park", "x": -10, "y": 0, "class": "st25 stcp"},
+				{"text": "APPRENDRE À", "x": -18, "y": 20, "class":"st27 stcp"},
+				{"text": "CONNAÎTRE LE CLIENT", "x": -45, "y": 40, "class":"st27 stcp"}
+			]
+		},   
+		{
+			"region": "uppereastside",
+			"transform": "matrix(0.4696 -0.8829 0.8829 0.4696 903.2277 189.8457)",
+			"content": [
+				{"text": "Upper East Side", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "SUGGÉRER ET", "x": 2, "y": 20, "class":"st27 st26"},
+				{"text": "PRÉSENTER DES PRODUITS", "x": -37, "y": 40, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "yorkville",
+			"transform": "matrix(0.4765 -0.8792 0.8792 0.4765 1023.8438 184.0225)",
+			"content": [
+				{"text": "Yorkville", "x": 10, "y": 0, "class": "st25 st26"},
+				{"text": "GÉRER LES OBJECTIONS", "x": -40, "y": 20, "class":"st27 st26"},
+				{"text": "ET CONCLURE LA VENTE", "x": -40, "y": 40, "class":"st27 st26"}
+			]
+		},  
+		{
+			"region": "tribeca",
+			"transform": "matrix(0.8824 0.4706 -0.4706 0.8824 477.6523 932.2043)",
+			"content": [
+				{"text": "Tribeca", "x": 5, "y": 0, "class": "st25 st26"},
+				{"text": "CONNAISSEZ VOS", "x": -30, "y": 20, "class":"st27 st26"},
+				{"text": "CONCURRENTS", "x": -22, "y": 40, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "financialdistrict",
+			"transform": "matrix(0.8964 0.4432 -0.4432 0.8964 398.7719 1034.9568)",
+			"content": [
+				{"text": "Financial District", "x": 1, "y": 0, "class": "st25 st26"},
+				{"text": "MATHEMATIQUES", "x": -5, "y": 20, "class":"st27 st26"},
+				{"text": "COMMERCIALES", "x": 0, "y": 40, "class":"st27 st26"}
+			]
+		},  
+		{
+			"region": "lowereastside",
+			"transform": "matrix(0.9294 0.369 -0.369 0.9294 671.2167 947.5052)",
+			"content": [
+				{"text": "Lower East Side", "x": 0, "y": 0, "class": "st25 st26"},
+				{"text": "EXPLOITATION", "x": 0, "y": 20, "class":"st27 st26"}
+			]
+		},   
+		{
+			"region": "chinatown",
+			"transform": "matrix(0.3946 -0.9189 0.9189 0.3946 575.6385 1035.7544)",
+			"content": [
+				{"text": "Chinatown", "x": -13, "y": 0, "class": "st25 stct"},
+				{"text": "MARCHAN-", "x": -15, "y": 15, "class":"st27 stct"},
+				{"text": "DISAGE", "x": -5, "y": 30, "class":"st27 stct"},
+				{"text": "VISUEL", "x": 2, "y": 45, "class":"st27 stct"}
+			]
+		}
+	]
+}

@@ -1,0 +1,252 @@
+/* 4.0 - Landing/Monthly Focus Page */
+@import "mixins";
+
+div.container-fluid.landing-page, div.container-fluid.landing-page > div.user-sidebar,
+div.container-fluid.landing-page > div.main-data-view {
+  padding: 0;
+}
+
+div.main-data-view > div.row {
+  margin: 0;
+  padding: 0;
+}
+
+div.vertical-center {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.landing-page-heading {
+  padding: 30px 0 10px 5px;
+
+  @include screen-size(sm-down) {
+    padding: 60px 0 0 5px;
+  }
+}
+
+div.link-partition {
+  border-bottom: 2px solid rgba(0, 0, 0, 1.0);
+  height: 3px;
+}
+
+div.class-link, div.misc-link, div.misc-nolink {
+  margin: 15px 0;
+  padding: 5px 0;
+  border: 1px solid rgba(0, 0, 0, 1.0);
+  cursor: pointer;
+  background: rgba(0, 0, 0, 1.0);
+  color: rgba(255, 255, 255, 1.0);
+}
+
+div.class-link:hover, div.misc-link:hover, div.misc-nolink:hover {
+  margin: 15px 0;
+  padding: 5px 0;
+  border: 1px solid rgba(0, 0, 0, 1.0);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 1.0);
+  color: rgba(0, 0, 0, 1.0);
+}
+
+div.btn-black {
+  max-width: 100px;
+
+  @include screen-size(sm-down) {
+    max-width: 100%;
+  }
+}
+
+div.class-link.open, div.misc-link, div.misc-nolink {
+  background: rgba(255, 255, 255, 1.0);
+  color: rgba(0, 0, 0, 1.0);
+}
+
+/*div.misc-link > a  { padding:10px 15px; position:relative; left:-10%; }*/
+div.class-link.open > a, div.misc-link > a, div.misc-nolink > a {
+  color: rgba(255, 255, 255, 1.0);
+}
+
+/*div.class-link.complete  { background:rgba(0,0,0,1.0); color:rgba(255,255,255,1.0); }*/
+div.container-fluid.footer-content-spacing {
+  padding: 120px 0 0 0;
+}
+
+div.attr-container {
+  position: relative;
+  @include screen-size(xs) {
+    padding: 0;
+  }
+}
+
+img {
+  &.attr-container-img {
+    min-height: 100px;
+  }
+
+  &.attr-container-img.open {
+    -webkit-filter: brightness(20%); /* Chrome, Safari, Opera */
+    filter: brightness(20%);
+  }
+
+  &.attr-container-img.no-overlay {
+    -webkit-filter: brightness(100%); /* Chrome, Safari, Opera */
+    filter: brightness(100%);
+  }
+}
+
+div.course-complete-overlay {
+  position: absolute;
+  width: 90%;
+  height: 100%; /* background:rgba(0,0,0,0.7); */
+}
+
+line.course-circle {
+  stroke-width: 75;
+  stroke-linecap: round;
+}
+
+text.score-text {
+  text-transform: uppercase;
+  font-size: 2.5pt;
+  font-weight: 600;
+}
+
+text.score-percentage {
+  font-weight: 600;
+  font-size: 4pt;
+}
+
+/* 4.1 - Carousel classes (when carousel is active) */
+
+div.carousel-inner {
+  div.active.left, div.carousel-inner .prev {
+    left: -33%;
+  }
+
+  div.active.right, div.carousel-inner .next {
+    left: 33%;
+  }
+}
+
+div.carousel-control {
+  &.left,
+  &.right {
+    background-image: none;
+  }
+}
+
+a.carousel-control {
+  margin-top: 75px;
+  background: rgba(0, 0, 0, 0.7);
+  height: 25%;
+}
+
+a.right.carousel-control {
+  width: 40px;
+  height: 80px;
+  border-radius: 40px 0 0 40px;
+
+  span {
+    position: relative;
+    top: 30px;
+    left: -5px;
+  }
+}
+
+a.left.carousel-control {
+  background: rgba(0, 0, 0, 0.7);
+  height: 25%;
+  width: 40px;
+  height: 80px;
+  border-radius: 0 40px 40px 0;
+
+  span {
+    position: relative;
+    top: 30px;
+    left: 5px;
+  }
+}
+
+/* Hide the first and last content blocks when on smaller viewports */
+@include screen-size(xs) {
+  div.item.active > div:first-child, div.item.active > div:last-child {
+    display: none;
+  }
+}
+
+.language-modal {
+  position: fixed;
+  top: 85px;
+  left: 85px;
+  z-index: 99999;
+  color: rgba(176, 176, 176, 1.0);
+
+  .col-md-6 {
+    padding-bottom: 80px;
+  }
+
+  .dark-bg {
+    background-color: black;
+    width: 90%;
+    margin: auto;
+  }
+
+  div.close-overlay {
+    float: right;
+    margin: 5px 15px 0 0;
+
+    .icon-close-btn {
+      margin: 5px 5px 0 0;
+    }
+  }
+
+  @include screen-size(xs) {
+    top: 0;
+    left: 0;
+    width: 100% !important; //(overwriting JS hardcoded values)
+
+    .dark-bg {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      top: 0;
+      position: fixed;
+    }
+
+  }
+}
+
+.change-language-form {
+  display: none;
+}
+
+.change-language {
+  margin: 0 5px 10px 5px;
+  border: none;
+}
+
+.language-login {
+  color: #FFF;
+  text-align: center;
+  margin-top: 35px;
+
+  a {
+    color: #FFF;
+    background-color: #464646;
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+
+  @include screen-size(sm-down) {
+    p, a {
+      font-size: 11px;
+    }
+  }
+}
+
+.language-login a:hover {
+  color: #FFF !important;
+}

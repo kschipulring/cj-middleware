@@ -1,0 +1,36 @@
+/* 5.2 - Footer content navigation */
+
+div.content-navigation-wrapper > ul.content-navigation-menu  {
+  list-style-type:none;
+  text-transform:uppercase;
+  padding:20px 20px 0;
+  text-align:right;
+  color:rgba(176,176,176,1.0);
+  font-size:18pt;
+  letter-spacing:0.1em;
+}
+ul.content-navigation-menu > li > a, div.objective-list > ul > li > div > a  {
+  color:rgba(176,176,176,1.0);
+  padding: 0;
+  margin: 0;
+  /* margin-right: 10px; */
+  width: 92%;
+  float: left;
+}
+div.content-navigation-wrapper > ul.content-navigation-menu > li  {
+  border-bottom:1px solid rgba(176,176,176,1.0);
+  padding:15px 0;
+}
+div.content-navigation-wrapper > ul.content-navigation-menu > li:last-of-type  { border-bottom:none; }
+div.content-navigation-wrapper > ul.content-navigation-menu > li::before  { font-family: "Glyphicons Halflings"; content:"\e257"; float:left; }
+div.content-navigation-wrapper > ul.content-navigation-menu > li::after  { content: ""; clear:both; }
+
+.fade-in-trigger  { -webkit-animation: pageOverlayFadeIn 1s forwards; animation: pageOverlayFadeIn 1s forwards; }
+.fade-out-trigger  { -webkit-animation: pageOverlayFadeElemOut 1s forwards; animation: pageOverlayFadeElemOut 1s forwards; }
+.fade-dark-trigger  {  -webkit-animation: pageOverlayFadeOut 1s; animation: pageOverlayFadeOut 1s; }
+.fade-light-trigger  { -webkit-animation: pageOVerlayFadeLight 1s 0.5s; animation: pageOverlayFadeLight 1s 0.5s; }
+.slide-up-trigger  { -webkit-animation: slideUp 2s 0.5s forwards; animation: slideUp 2s 0.5s forwards; }
+.slide-down-trigger  { -webkit-animation: slideDown 2s forwards; animation: slideDown 2s forwards; }
+
+.slide-right-trigger  { -webkit-animation: slideRight 2s forwards; animation: slideRight 2s forwards; }
+.slide-left-trigger  { -webkit-animation: slideLeft 2s forwards; animation: slideLeft 2s forwards; }

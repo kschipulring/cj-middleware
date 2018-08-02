@@ -1,0 +1,243 @@
+<div class="col-lg-12 col-md-12 col-sm-12">
+    <div class="row landing-page-heading">
+        <h1></h1>
+    </div>
+    <div class="row content-container">
+        <div class="row overlay-heading">
+            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 course-heading vertical-center"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right close-overlay vertical-center">
+                <i class="icon-close-btn"></i>
+            </div>
+        <!-- <iframe frameborder="0" height="100%" width="100%"></iframe> -->
+        </div>
+    </div>   
+    <!--<div class="row course-detail"></div>-->
+    <div class="row course-data-container course-data-spinner-div">
+        <div class="col-lg-11 col-md-11 col-sm-11 course-data-spinner">
+            <img src="/assets/pdf-preloader.gif" />
+        </div>
+    </div>
+    <div class="row quiz-container" id="quizmodal"></div>
+    <div class="row pre-load-modal">
+        <div class="col-lg-11 col-md-11 col-sm-11 dark-bg">
+           <img src="/assets/preloader.gif" class="preload-spinner"/>
+        </div>
+    </div>
+</div>
+<script id="course-detail-overlay" type="text/x-handlebars-template">
+    <div class="test-size">
+        <div class="dark-bg">
+            <div class="row overlay-heading">
+                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 course-heading vertical-center"></div><!--
+                 --><div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right close-overlay vertical-center">
+                <!-- <span class="glyphicon glyphicon-remove-sign">&nbsp;</span> -->
+                <i class="icon-close-btn"></i>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 traversal-data" id="traversalData">
+                    <div id="imgWrapper" class="course-image"></div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <p>{{{courseSummary}}}</p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 objective-list">
+                    <ul>
+                        {{#each children}}
+                        <li>
+                            <div>
+                                {{#if is_link}}
+                                    <a href="{{link_path}}" class="objective-link {{type}} {{disabled}}" id="{{object_id}}" attr-parent="{{parent_object_id}}" attr-record-id="{{record_id}}" attr-location="{{@key}}">{{title}}</a>
+								{{else if is_scorm}}
+                                    <a href="#" class="objective-link {{type}} {{disabled}}" id="{{object_id}}" attr-parent="{{parent_object_id}}" attr-record-id="{{record_id}}" attr-location="{{@key}}">{{title}}</a>
+                                {{else if is_video}}
+                                    <a href="#" class="objective-link {{type}} play-video {{disabled}}" id="{{object_id}}" attr-parent="{{parent_object_id}}" attr-record-id="{{record_id}}" attr-location="{{@key}}">{{title}}</a>
+                                {{else if is_quiz}}
+                                    <a href="#" class="objective-link {{type}} {{disabled}} quiz-link" id="{{object_id}}" attr-quiz-percent="{{quiz_percent}}" attr-parent="{{parent_object_id}}" attr-record-id="{{record_id}}" attr-location="{{@key}}">{{title}}</a>
+                                {{else}} 
+                                    <span>{{title}}</span>                            
+                                {{/if}}
+                                {{#if is_objective_complete}}
+                                    <img src="{site_url}/images/checkboxes/check-mark-green.png" class="image-checkbox-monthly-focus"/>
+                                {{else}}
+                                    <img src="{site_url}/images/checkboxes/nocheck-mark.png" class="image-checkbox-monthly-focus"/>
+                                {{/if}}
+    						</div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<script id="course-data-summary-template" type="text/x-handlebars-template">
+    {{#each this}}
+    <div class="row product-focus">
+        {{#each this}}
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="col-lg-12 col-md-12 col-sm-12 course-type-container">
+                <h3>{{{course_head}}}</h3>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 attr-container">
+                <img src="{{course_image}}" class="attr-container-img {{#if course_completion}} open{{/if}} {{#if course_no_quiz}} no-overlay{{/if}}" />
+                <div class="monthly-focus-pass-percent svg-{{course_id}}" {{#unless course_percent}}style="display:none;"{{/unless}}>
+                    <div class="monthly-focus-svg">
+                        <svg viewbox="0,0,100,100">
+                          <circle cx="3.5em" cy="3.5em" r="3em" stroke="RGB(100,196,151)" stroke-width="8" fill="none"></circle>
+                          <circle cx="3.5em" cy="3.5em" r="2.5em" stroke="white" stroke-width="1" fill="white" fill-opacity="1"></circle>
+                          <text text-anchor="middle" font-size="1.4em" font-weight="550" fill="black">
+                            <tspan x="4.2em" y="3.5em" text-anchor="middle" style="font-weight:500;font-size:12px;">{exp:transcribe:replace name="score"}</tspan>
+                            <tspan x="2.5em" text-anchor="middle" dy="20" id="svg-{{course_id}}">{{course_percent}}</tspan>
+                          </text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            {{#if course_title}}
+                <div class="col-lg-12 col-md-12 col-sm-12 course-title-container">
+                    <h4>{{stringTitle course_title}}</h4>
+                </div>
+            {{/if}}
+            {{#if course_title}}
+                <div class="col-lg-12 col-md-12 col-sm-12 class-link-container">
+    				<div class="link-partition">&nbsp;</div>
+                </div>
+            {{/if}}
+            <div class="col-lg-12 col-md-12 col-sm-12 class-link-container">
+                <div class="btn-black text-center class-link{{#if course_completion}} open{{/if}}" id="{{course_id}}" attr-link="{{link}}" attr-children="{{course_children}}" attr-location="{{@../key}}-{{@key}}">
+                    <span>{exp:transcribe:replace name="explore"}</span>
+                </div>
+                <div class="course_description course-description-{{course_id}}">{{course_summary}}</div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{/each}}
+</script>
+<script id="quiz-modal-old" type="text/x-handlebars-template">
+    <div class="col-lg-11 col-md-11 col-sm-11 dark-bg">
+        <div class="row overlay-heading">
+            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 course-heading vertical-center"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right close-overlay vertical-center">
+                <i class="icon-close-btn"></i>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
+            <form class="form-inline" id="user-quiz">
+                {{#each DATA}}
+                    <div class="row quiz-question">
+                            {{QUES_NO}}.  {{{QUES_TEXT}}}
+                    </div>   
+                    <div class="row"> 
+                        <ul>
+                        {{#each ANSWERS}}
+                            <li>
+                              <label class="radio">
+                                <input type="radio" name="{{QUES_NO}}" id="{{QUES_NO}}-{{ANS_NO}}" value="{{ANS_NO}}" class="form-control">
+                                {{{ANSWER_TEXT}}}
+                              </label>
+                            </li>                
+                        {{/each}}
+                        </ul>
+                    </div>
+                {{/each}}
+            <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</script>
+<script id="quiz-modal" type="text/x-handlebars-template">
+    <div class="col-lg-11 col-md-11 col-sm-11 dark-bg">
+        <div class="row overlay-heading">
+            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 course-heading vertical-center"></div><!--
+             --><div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right close-overlay vertical-center">
+            <!-- <span class="glyphicon glyphicon-remove-sign">&nbsp;</span> -->
+            <i class="icon-close-btn"></i>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-6 col-md-6 col-sm-6">
+				<div class="quiz-questions">
+					<input type="hidden" id="quiz_record_id" value={{record_id}}>
+					<input type="hidden" id="quiz_percent" value="{{PASSING_PERCENT}}">
+					<div>{{MESSAGE}}</div>
+					{{#each DATA}}
+						<div class="question{{QUES_NO}} question">
+							{{QUES_NO}}.  {{{QUES_TEXT}}}
+							{{#each ANSWERS}}
+								<div class="radio">
+								  <label class="correct-ans-{{../QUES_NO}}-{{ANS_NO}}">
+									<input type="radio" class="user-answer" name="{{../QUES_NO}}" id="{{../QUES_NO}}-{{ANS_NO}}" value="{{ANS_NO}}">
+									{{{ANSWER_TEXT}}}
+
+									{{#if CORRECT}}
+									<span id="selected-ans-correct" class="correct-ans">[{exp:transcribe:replace name="correct"}]</span>
+									{{else}}
+									<span id="selected-ans-incorrect" class="incorrect-ans">[{exp:transcribe:replace name="incorrect"}]</span>
+									{{/if}}
+
+								  </label>
+
+								</div>
+							{{/each}}
+							<div class="errormsg">{exp:transcribe:replace name="please_select_an_answer"}</div>
+							<div>
+								<button class="next btn btn-default">{exp:transcribe:replace name="next"}</button>
+							</div>
+						</div>
+					{{/each}}
+				</div>
+				<div class="quiz-results">
+				</div>
+				<div class="quiz-review">
+				<input type="hidden" id="current_question_no" value="">
+				{{#each DATA}}
+					<div class="question{{QUES_NO}} question">
+						<p>{{QUES_NO}}.  {{{QUES_TEXT}}}</p>
+						<div class="quiz-user-answer">
+						<strong>{exp:transcribe:replace name="user_answer"}: </strong><span class="user-answer"> </span>
+						</div>
+						{{#each ANSWERS}}
+							{{#if CORRECT}}
+							<div class="correct-answer">
+							  <p><strong>{exp:transcribe:replace name="correct_answer"}: &nbsp;</strong>  {{ANS_NO}} - {{{ANSWER_TEXT}}}</p>
+							  <p><strong>{exp:transcribe:replace name="rational"}:</strong>
+							  {{{RATIONALE}}}</p>
+							</div>
+							{{/if}}
+						{{/each}}
+						<div>
+							<br/>
+							<button class="next btn btn-default">{exp:transcribe:replace name="next"}</button>
+							<br/>
+							<p class="review-end"><strong>{exp:transcribe:replace name="end_review"}</strong></p>
+						</div>
+					</div>
+				{{/each}}
+				</div>
+            </div>
+        </div>
+    </div>
+</script>
+<script>
+    /**
+     *Place this code into the 'attr-container' class (somewhere around line 65) once the project is ready for the quiz data
+     {{#isComplete course_completion.is_complete
+    <div class="course-complete-overlay text-center">
+            <div class="circle-line progress">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 50">
+            <circle cx="50" cy="27" r="13" stroke="rgba(100,196,151,1.0)" stroke-width="1.5" fill="none" />
+            <g>
+            <line x1="50" y1="27" x2="50" y2="27" stroke="rgba(255,255,255,1.0) "class="course-circle" />
+            <text x="50" y="25" text-anchor="middle" class="score-text">score</text>
+            <text x="50" y="31" text-anchor="middle" class="score-percentage">course_completion.course_score&#37;</text>
+    </g>
+    </svg>
+    </div>
+    </div>
+    {{/isComplete}}
+     *
+     */
+</script>
+

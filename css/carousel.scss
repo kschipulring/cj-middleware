@@ -1,0 +1,108 @@
+/* 4.1 - Carousel classes (when carousel is active) */
+
+div {
+  &.carousel-inner {
+    div.active.left, .prev {
+      left: -33%;
+    }
+    div.active.right, .next {
+      left: 33%;
+    }
+  }
+  &.carousel-control {
+    &.left, &.right {
+      background-image: none;
+    }
+  }
+}
+
+a {
+  &.carousel-control {
+    margin-top: 75px;
+    background: rgba(0, 0, 0, 0.7);
+    height: 25%;
+  }
+  &.right.carousel-control {
+    width: 40px;
+    height: 80px;
+    border-radius: 40px 0 0 40px;
+  }
+  &.left.carousel-control {
+    background: rgba(0, 0, 0, 0.7);
+    height: 25%;
+    width: 40px;
+    height: 80px;
+    border-radius: 0 40px 40px 0;
+  }
+  &.right.carousel-control > span {
+    position: relative;
+    top: 30px;
+    left: -5px;
+  }
+  &.left.carousel-control > span {
+    position: relative;
+    top: 30px;
+    left: 5px;
+  }
+}
+
+/* Hide the first and last content blocks when on smaller viewports */
+@media (max-width: 768px) {
+  div.item.active > div {
+    &:first-child, &:last-child {
+      display: none;
+    }
+  }
+}
+
+#language-modal {
+  height: 1000px;
+  width: 100%;
+  display: none;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.language-modal {
+  position: fixed;
+  top: 85px;
+  left: 85px;
+  z-index: 99999;
+  color: rgba(176, 176, 176, 1);
+  .col-md-6 {
+    padding-bottom: 80px;
+  }
+}
+
+#language-modal a, .language-login a {
+  color: rgba(176, 176, 176, 1);
+  border-color: rgba(176, 176, 176, 1);
+}
+
+.change-language-form {
+  display: none;
+}
+
+.language-login a {
+  color: #FFF;
+  background-color: #464646;
+  font-size: 16px;
+}
+
+.change-language {
+  margin: 0 5px 10px 5px;
+  border: none;
+}
+
+.language-login {
+  color: #FFF;
+  text-align: center;
+  margin-top: 35px;
+  p {
+    font-size: 16px !important;
+  }
+  a:hover {
+    color: #FFF !important;
+  }
+}

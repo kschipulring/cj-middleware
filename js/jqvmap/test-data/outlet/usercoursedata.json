@@ -1,0 +1,98 @@
+{
+  "product": [
+    {
+      "course_title": "fall overview",
+      "course_image": "assets/landing-page/outlet/sep-product-focus-1.jpg",
+      "course_completion": {
+        "is_objective_complete":"false"
+      },
+      "course_id": "outlet-product-info1"
+    },
+    {
+      "course_title": "the women's collection",
+      "course_image": "assets/landing-page/outlet/sep-product-focus-2.jpg",
+      "course_completion": {
+        "is_objective_complete":"false"
+      },
+      "course_id": "outlet-product-info2"
+    },
+    {
+      "course_title": "the men's collection",
+      "course_image": "assets/landing-page/outlet/sep-product-focus-3.jpg",
+      "course_completion": {
+        "is_objective_complete":"false"
+      },
+      "course_id": "outlet-product-info3"
+    }
+  ],
+  "service": [
+    {
+      "course_title": "styling 101",
+      "course_image": "assets/landing-page/outlet/styling-101.jpg",
+      "course_completion": {
+        "is_objective_complete":"false"
+      },
+      "course_id": "outlet-service-info1"
+    },
+    {
+      "course_title": "Coach Style Challenge",
+      "course_image": "assets/landing-page/outlet/outlet-styling-game.jpg",
+      "course_completion": {
+        "is_objective_complete":"false"
+      },
+      "course_id": "outlet-service-info2"
+    },
+    {
+      "course_title": "knowing the customer",
+      "course_image": "assets/landing-page/sep-service-focus-3.jpg",
+      "course_completion": {
+        "is_objective_complete":"false"
+      },
+      "course_id": "outlet-service-info3"
+    }
+  ],
+  "seasonal": [
+    {
+      "course_title": "regional forum",
+      "course_image": "assets/landing-page/sep-seasonal-focus-1.jpg",
+      "course_completion": {
+        "is_objective_complete":"false"
+      },
+      "course_id": "outlet-seasonal-focus1"
+    },
+    {
+      "course_title": "coach fragrance",
+      "course_image": "assets/landing-page/sep-seasonal-focus-2.jpg",
+      "course_completion": {
+        "is_objective_complete":"false"
+      },
+      "course_id": "outlet-seasonal-focus2"
+    },
+    {
+      "type": "product library",
+      "object_image": "assets/landing-page/outlet/sep-product-library.jpg",
+      "course_id" : "outlet-product-library1",
+      "interaction_link": "#"
+    }
+  ],
+  "other": [
+    {
+      "type": "last month archive",
+      "object_image": "assets/landing-page/outlet/OutletArchive.jpg",
+      "course_id" : "outlet-other1"
+    },
+    {
+      "type": "spotted",
+      "object_image": "assets/landing-page/sep-spotted.jpg",
+      "course_id": "outlet-spotted1"
+    },
+    {
+      "type": "instagram",
+      "object_image": "assets/landing-page/sep-instagram.jpg",
+      "action": {
+        "action_type":"link",
+        "action_url": "https://www.instagram.com/coach/"
+      }
+    }
+  ]
+}

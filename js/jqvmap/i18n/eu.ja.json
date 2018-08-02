@@ -1,0 +1,74 @@
+{
+	"additionalContent": [
+		{
+			"region": "eu",
+			"transform": "scale(1)",
+			"content": [],
+			"name": ""
+		},
+		{
+			"region": "united-kingdom",
+			"transform": "translate(130, 170)",
+			"content": [
+				{"text": "イギリス", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "レディ･トゥ･ウェア", "x": -15, "y": 12, "class": "mapH2"},
+				{"text": "(RTW)", "x": 6, "y": 22, "class": "mapH2"}
+			],
+			"name": "UK"
+		},
+		{
+			"region": "germany",
+			"transform": "translate(328, 210)",
+			"content": [
+				{"text": "ドイツ", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "ソフトアクセサリー", "x": -25, "y": 12, "class": "mapH2"}
+			],
+			"name": "Germany"
+		},
+		{
+			"region": "france",
+			"transform": "translate(200, 320)",
+			"content": [
+				{"text": "フランス", "x": 5, "y": 0, "class": "mapH1"},
+				{"text": "香水", "x": 15, "y": 12, "class": "mapH2"}
+			],
+			"name": "France"
+		},
+		{
+			"region": "switzerland",
+			"transform": "translate(310, 316)",
+			"content": [
+				{"text": "スイス", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "腕時計", "x": -1, "y": 12, "class": "mapH2"}
+			],
+			"name": "Switzerland"
+		},
+		{
+			"region": "italy",
+			"transform": "rotate(44) translate(559, 8)",
+			"content": [
+				{"text": "イタリア", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "サングラス", "x": -5, "y": 12, "class": "mapH2"}
+			],
+			"name": "Italy"
+		},
+		{
+			"region": "spain",
+			"transform": "translate(110, 460)",
+			"content": [
+				{"text": "スペイン",  "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "シューズ", "x": 0, "y": 12, "class": "mapH2"}
+			],
+			"name": "Spain"
+		},
+		{
+			"region": "portugal",
+			"transform": "translate(35, 490) rotate(-79)",
+			"content": [
+				{"text": "ポルトガル", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "ジュエリー", "x": -1, "y": 12, "class": "mapH2"}
+			],
+			"name": "Portugal"
+		}
+	]
+}

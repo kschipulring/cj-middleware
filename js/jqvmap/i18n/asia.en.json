@@ -1,0 +1,125 @@
+{
+	"additionalContent": [
+      {
+          "region": "asia",
+          "transform": "scale(1)",
+          "content": [],
+          "name": ""
+      },
+      { "region": "china", "transform": "translate(202 131)",
+        "content": [
+          {"text": "CHINA", "x": 0, "y": 0, "class": "mapH0"}
+        ]
+      },
+      { "region": "korea", "transform": "translate(380 100)",
+        "content": [
+          {"text": "KOREA", "x": 0, "y": 0, "class": "mapH0"}
+        ]
+      },
+      { "region": "vietnam", "transform": "translate(230 345)",
+        "content": [
+          {"text": "VIETNAM", "x": 0, "y": 0, "class": "mapH0"}
+        ]
+      },
+      { "region": "japan", "transform": "translate(509 137)",
+        "content": [
+          {"text": "JAPAN", "x": 0, "y": 0, "class": "mapH0"}
+        ]
+      },
+      { "region": "south-east-asia", "transform": "translate(286 411)",
+        "content": [
+          {"text": "SOUTHEAST", "x": 0, "y": 0, "class": "mapH0 map-water-text"},
+          {"text": "ASIA", "x": 18, "y": 10, "class": "mapH0 map-water-text"}
+        ]
+      },
+      { "region": "malaysia", "transform": "translate(203 430)",
+        "content": [
+          {"text": "MALAYSIA", "x": 0, "y": 0, "class": "mapH0"}
+        ]
+      },
+      { "region": "taiwan", "transform": "translate(354 296)",
+        "content": [
+          {"text": "TAIWAN", "x": 0, "y": 0, "class": "mapH0"}
+          ]
+      },
+      { "region": "chengdu", "transform": "translate(165 170)",
+        "content": [
+          {"text": "Chengdu", "x": 0, "y": 0, "class": "mapH3"},
+          {"text": "CLIENTELING", "x": -10, "y": 12, "class": "mapH2"},
+          {"text": "PLATFORM", "x": -5, "y": 22, "class": "mapH2"}
+          ]
+      },
+      { "region": "beijing", "transform": "translate(273 96)",
+        "content": [
+          {"text": "Beijing", "x": 0, "y": 0, "class": "mapH3"},
+          {"text": "HOSTING", "x": -8, "y": 12, "class": "mapH2"},
+          {"text": "APPOINTMENTS", "x": -20, "y": 22, "class": "mapH2"},
+          {"text": "& GIFTS", "x": 0, "y": 32, "class": "mapH2"}
+          ]
+      },
+      { "region": "seoul", "transform": "translate(399 111)",
+        "content": [
+          {"text": "Seoul", "x": 0, "y": 0, "class": "mapH3"},
+          {"text": "LEATHER & CARE", "x": -20, "y": 12, "class": "mapH2"}
+          ]
+      },
+      { "region": "sapporo", "transform": "translate(536 51)",
+        "content": [
+          {"text": "Sapporo", "x": 0, "y": 0, "class": "mapH3"},
+          {"text": "STYLING", "x": -1, "y": 12, "class": "mapH2"},
+          {"text": "READY-TO-", "x": -5, "y": 22, "class": "mapH2"},
+          {"text": "WEAR", "x": 5, "y": 32, "class": "mapH2"}
+          ]
+      },
+      { "region": "tokyo", "transform": "translate(533 164)",
+        "content": [
+          {"text": "Tokyo", "x": 0, "y": 0, "class": "mapH3"},
+          {"text": "STYLING", "x": -8, "y": 12, "class": "mapH2"},
+          {"text": "BAGS &", "x": -3, "y": 22, "class": "mapH2"},
+          {"text": "ACCESSOIRES", "x": -12, "y": 32, "class": "mapH2"}
+          ]
+      },
+      { "region": "kyoto", "transform": "translate(486 186)",
+        "content": [
+          {"text": "Kyoto", "x": 0, "y": 0, "class": "mapH3"},
+          {"text": "FASHION", "x": -10, "y": 12, "class": "mapH2"},
+          {"text": "& TREND", "x": -10, "y": 22, "class": "mapH2"}
+          ]
+      },
+      { "region": "tapei", "transform": "translate(392 260)",
+        "content": [
+          {"text": "Taipei", "x": 0, "y": 0, "class": "mapH3"},
+          {"text": "MONO-", "x": -2, "y": 12, "class": "mapH2"},
+          {"text": "GRAMMING", "x": -10, "y": 22, "class": "mapH2"}
+          ]
+      },
+      { "region": "singapore", "transform": "translate(267 458)",
+        "content": [
+          {"text": "SINGAPORE", "x": -28, "y": 0, "class": "mapH0"},
+          {"text": "Singapore", "x": 0, "y": 12, "class": "mapH3"},
+          {"text": "REPAIRS", "x": 4, "y": 24, "class": "mapH2"}
+          ]
+      },
+      { "region": "shanghai", "transform": "translate(297 170)",
+        "content": [
+          {"text": "Shanghai", "x": 0, "y": 0, "class": "mapH3"},
+          {"text": "CLIENTELING", "x": -6, "y": 12, "class": "mapH2"},
+          {"text": "FUNDAMENTALS", "x": -15, "y": 22, "class": "mapH2"}
+          ]
+      },
+      { "region": "hongkong", "transform": "translate(252 250)",
+        "content": [
+          {"text": "Hong Kong", "x": 0, "y": 0, "class": "mapH3"},
+          {"text": "CUSTOMER", "x": -1, "y": 12, "class": "mapH2"},
+          {"text": "CAPTURE", "x": 2, "y": 22, "class": "mapH2"}
+          ]
+      },
+      { "region": "hanoi", "transform": "translate(213 299)",
+        "content": [
+          {"text": "Hanoi", "x": 0, "y": 0, "class": "mapH3"},
+          {"text": "QUALITY &", "x": -10, "y": 12, "class": "mapH2"},
+          {"text": "CRAFTSMANSHIP", "x": -25, "y": 22, "class": "mapH2"}
+          ]
+      }
+	]
+}

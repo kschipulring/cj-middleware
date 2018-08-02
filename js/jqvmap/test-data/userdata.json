@@ -1,0 +1,30 @@
+{
+  "MESSAGE": "",
+  "STATUS": true,
+  "DATA": {
+    "PHONE":"952-345-5555",
+    "JOB_TITLE":"Sales",
+    "USER_ID":1,
+    "EMAIL":"test@test-email.com",
+    "LAST_NAME":"User",
+    "FIRST_NAME":"Coach",
+	"CITY":"New York City",
+	"STATE":"NY",
+	"COUNTRY":"USA",
+    "STATUS":"Active",
+    "ADDED_ON":"2015-07-30 11:00:50.240",
+    "GMT_OFFSET":-6,
+    "USERNAME":"testuser",
+    "MIDDLE_NAME":"",
+    "ADDED_BY":"",
+    "LANGUAGE_ID":1,
+    "EXPIRES_ON":"",
+    "FORCE_PASSWORD_CHANGE":1,
+    "CUSTOM_ATTRIBUTES": {
+      "COURSES_COMPLETED":17,
+      "TOTAL_COURSES":24,
+	  "TOTAL_SCORES":1500,
+      "ML_RANK":"ML Apprentice"
+    }
+  }
+}

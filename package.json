@@ -1,0 +1,27 @@
+{
+  "name": "coach-journeys",
+  "version": "1.0.0",
+  "description": "EE implementation for Coach Journeys Map",
+  "main": "index.php",
+  "scripts": {
+    "test": "test",
+    "styles": "sass --style compressed css/*.scss js/*/*.scss",
+    "styleswatch": "sass --style compressed --watch css/*.scss js/*/*.scss",
+    "uglify": "uglifyjs js/coach.js -c -v --keep-fnames --lint -o js/coach.min.js --source-map js/coach.js.map",
+    "build": "npm run styles && npm run uglify",
+    "watch": "sass --watch css/ --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/iromendik/coach-journeys.git"
+  },
+  "author": "Coach",
+  "license": "UNLICENSED",
+  "private": true,
+  "homepage": "https://bitbucket.org/iromendik/coach-journeys#readme",
+  "dependencies": {
+    "uglify": "^0.1.5",
+    "videojs": "^1.0.0",
+    "videojs-contrib-hls": "^5.5.3"
+  }
+}

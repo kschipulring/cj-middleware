@@ -1,0 +1,74 @@
+{
+	"additionalContent": [
+		{
+			"region": "eu",
+			"transform": "scale(1)",
+			"content": [],
+            "name": ""
+		},
+      {
+			"region": "united-kingdom",
+			"transform": "translate(142, 170)",
+			"content": [
+				{"text": "UK", "x": 2.5, "y": 0, "class": "mapH1"},
+				{"text": "READY-TO-", "x": -16, "y": 12, "class": "mapH2"},
+                {"text": "WEAR", "x": -7.5, "y": 22, "class": "mapH2"}
+			],
+            "name": "UK"
+		},
+		{
+			"region": "germany",
+			"transform": "translate(325, 210)",
+			"content": [
+				{"text": "Germany", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "SOFT ACCESSORIES", "x": -32, "y": 12, "class": "mapH2"}
+			],
+            "name": "Germany"
+		},
+		{
+			"region": "france",
+			"transform": "translate(200, 320)",
+			"content": [
+				{"text": "France", "x": 7, "y": 0, "class": "mapH1"},
+				{"text": "FRAGRANCE", "x": -10, "y": 12, "class": "mapH2"}
+			],
+            "name": "France"
+		},
+		{
+			"region": "switzerland",
+			"transform": "translate(298, 319)",
+			"content": [
+				{"text": "Switzerland", "x": 2, "y": 0, "class": "mapH1"},
+				{"text": "WATCHES", "x": 3, "y": 12, "class": "mapH2"}
+			],
+            "name": "Switzerland"
+		},
+		{
+			"region": "italy",
+			"transform": "rotate(44) translate(560, 9)",
+			"content": [
+				{"text": "Italy", "x": 5, "y": 0, "class": "mapH1"},
+				{"text": "SUNGLASSES", "x": -19, "y": 12, "class": "mapH2"}
+			],
+            "name": "Italy"
+		},
+		{
+			"region": "spain",
+			"transform": "translate(115, 460)",
+			"content": [
+				{"text": "Spain",  "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "SHOES", "x": -5, "y": 12, "class": "mapH2"}
+			],
+            "name": "Spain"
+		},
+		{
+			"region": "portugal",
+			"transform": "translate(35, 480) rotate(-79)",
+			"content": [
+				{"text": "Portugal", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "JEWELRY", "x": -5, "y": 12, "class": "mapH2"}
+			],
+            "name": "Portugal"
+		}
+	]
+}

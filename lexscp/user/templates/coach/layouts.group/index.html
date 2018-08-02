@@ -1,0 +1,9 @@
+{if logged_in}
+{embed="global/_global_header"}
+<div class="container-fluid" id="main_content">
+	{layout:contents}
+</div>
+{embed="global/_global_footer"}
+{if:else}
+{redirect="member/login"}
+{/if}

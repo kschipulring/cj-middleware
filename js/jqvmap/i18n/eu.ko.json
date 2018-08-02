@@ -1,0 +1,73 @@
+{
+	"additionalContent": [
+		{
+			"region": "eu",
+			"transform": "scale(1)",
+			"content": [],
+            "name": ""
+		},
+      {
+			"region": "united-kingdom",
+			"transform": "translate(142, 170)",
+			"content": [
+				{"text": "영국", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "레디투웨어", "x": -15, "y": 12, "class": "mapH2"}
+			],
+            "name": "UK"
+		},
+		{
+			"region": "germany",
+			"transform": "translate(335, 210)",
+			"content": [
+				{"text": "독일", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "소프트 액세서리", "x": -25, "y": 12, "class": "mapH2"}
+			],
+            "name": "Germany"
+		},
+		{
+			"region": "france",
+			"transform": "translate(208, 320)",
+			"content": [
+				{"text": "프랑스", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "향수", "x": 5, "y": 12, "class": "mapH2"}
+			],
+            "name": "France"
+		},
+		{
+			"region": "switzerland",
+			"transform": "translate(310, 317)",
+			"content": [
+				{"text": "스위스", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "워치", "x": 5, "y": 12, "class": "mapH2"}
+			],
+            "name": "Switzerland"
+		},
+		{
+			"region": "italy",
+			"transform": "rotate(44) translate(559, 8)",
+			"content": [
+				{"text": "이탈리아", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "선글라스", "x": 0, "y": 12, "class": "mapH2"}
+			],
+            "name": "Italy"
+		},
+		{
+			"region": "spain",
+			"transform": "translate(115, 460)",
+			"content": [
+				{"text": "스페인",  "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "슈즈", "x": 2, "y": 12, "class": "mapH2"}
+			],
+            "name": "Spain"
+		},
+		{
+			"region": "portugal",
+			"transform": "translate(35, 480) rotate(-79)",
+			"content": [
+				{"text": "포르투갈", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "주얼리", "x": 1, "y": 12, "class": "mapH2"}
+			],
+            "name": "Portugal"
+		}
+	]
+}

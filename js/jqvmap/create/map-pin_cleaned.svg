@@ -1,0 +1,22 @@
+<svg height="37" viewBox="0 0 23 37" width="23" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <ellipse id="b" cx="11.55" cy="33.425" rx="2.508" ry="1.342"/>
+  <filter id="a" height="323.6%" width="219.6%" x="-59.8%" y="-111.8%">
+   <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
+   <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+   <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+   <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+   <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+  </filter>
+ </defs>
+ <g fill="none">
+  <path d="m11.317 33.075c-4.2-5.483-8.4-10.908-10.384-17.675-2.275-7.817 2.859-14.933 10.675-14.875 7.234.058 12.367 6.592 10.792 13.65-1.108 5.367-6.767 14.992-11.083 18.9zm5.658-22.225c-.058-2.975-2.45-5.308-5.425-5.367-3.033 0-5.658 2.567-5.6 5.542.058 2.917 2.508 5.308 5.483 5.308 3.15.059 5.6-2.391 5.542-5.483z" fill="#000"/>
+  <path d="m16.975 10.85c.058 3.092-2.392 5.542-5.542 5.483-2.975-.058-5.425-2.45-5.483-5.308-.058-2.975 2.567-5.542 5.6-5.542s5.425 2.392 5.425 5.367z" fill="#fff" fill-opacity=".5"/>
+  <g fill="#000" opacity=".3">
+   <use filter="url(#a)" xlink:href="#b"/>
+   <use fill-opacity=".95" fill-rule="evenodd" xlink:href="#b"/>
+  </g>
+  <path d="m15.003 9.605a.374.374 0 0 1 -.123.288l-3.175 3.173-.577.577a.374.374 0 0 1 -.289.124.374.374 0 0 1 -.288-.124l-.577-.577-1.567-1.566a.374.374 0 0 1 -.124-.288c0-.124.042-.206.124-.289l.577-.576a.374.374 0 0 1  .289-.124c.123 0 .206.041.288.124l1.278 1.277 2.886-2.885a.374.374 0 0 1  .289-.123c.124 0 .206.041.288.123l.578.577a.374.374 0 0 1  .123.289z" fill="#000"/>
+  <path d="m7.808 10.9c0-.438.341-.75.75-.75.478 0 .75.313.75.75 0 .438-.272.75-.75.75-.409 0-.75-.375-.75-.75zm2.275 0c0-.438.341-.75.75-.75.41 0 .75.313.75.75 0 .438-.272.75-.75.75-.409 0-.75-.375-.75-.75zm2.334 0c0-.438.34-.75.75-.75.477 0 .75.313.75.75 0 .438-.273.75-.75.75-.478 0-.75-.375-.75-.75z" fill="#000" opacity=".5"/>
+ </g>
+</svg>

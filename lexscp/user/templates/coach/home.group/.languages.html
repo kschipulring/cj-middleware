@@ -1,0 +1,44 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">{exp:transcribe:replace name="language_headline"}</h4>
+      </div>
+	  <form action="{exp:transcribe:action_url}" method="post">
+	  <input type="hidden" name="XID" value="{XID_HASH}">
+      <div class="modal-body">
+        <div class="row">
+			<div class="col-md-12">                                  
+				<p>{exp:transcribe:replace name="language_intro"}</p>			
+				<div class="form-group">
+				<label for="language">{exp:transcribe:replace name="language_nav"}</label>
+				{exp:transcribe:language_links}
+					<select name="lang" id="language" class="form-control">
+					{languages}
+					<option value="{abbreviation}"{if current} selected="selected"{/if}>{name}</option>
+					{/languages}
+					</select>
+				{/exp:transcribe:language_links}
+				</div>			
+			</div>
+		</div>
+      </div>
+      <div class="modal-footer">
+	    <button id="close" type="button" class="btn btn-default btn-sm herobutton" data-dismiss="modal">{exp:transcribe:replace name="button_close"}</button>
+        <button type="submit" class="btn btn-primary btn-sm herobutton">{exp:transcribe:replace name="button_submit"}</button>        
+      </div>
+	  </form>
+    </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+
+<script type="text/javascript">
+// <![CDATA[
+$(function(){
+	// For the Site Tracking
+	$( "a.track" ).unbind( "click" );
+	$( "a.track" ).bind( "click", function() {
+        sitetracking( this );		
+    });
+});
+// ]]>
+</script>

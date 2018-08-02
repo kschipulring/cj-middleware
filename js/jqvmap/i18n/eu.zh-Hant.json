@@ -1,0 +1,73 @@
+{
+	"additionalContent": [
+		{
+			"region": "eu",
+			"transform": "scale(1)",
+			"content": [],
+            "name": ""
+		},
+      {
+			"region": "united-kingdom",
+			"transform": "translate(142, 170)",
+			"content": [
+				{"text": "英國", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "服飾", "x": 0, "y": 12, "class": "mapH2"}
+			],
+            "name": "UK"
+		},
+		{
+			"region": "germany",
+			"transform": "translate(340, 210)",
+			"content": [
+				{"text": "德國", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "配飾", "x": 0, "y": 12, "class": "mapH2"}
+			],
+            "name": "Germany"
+		},
+		{
+			"region": "france",
+			"transform": "translate(212, 320)",
+			"content": [
+				{"text": "法國", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "香水", "x": 0, "y": 12, "class": "mapH2"}
+			],
+            "name": "France"
+		},
+		{
+			"region": "switzerland",
+			"transform": "translate(315, 316)",
+			"content": [
+				{"text": "瑞士", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "手錶", "x": 0, "y": 12, "class": "mapH2"}
+			],
+            "name": "Switzerland"
+		},
+		{
+			"region": "italy",
+			"transform": "rotate(44) translate(559, 8)",
+			"content": [
+				{"text": "義大利", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "太陽眼鏡", "x": -5, "y": 12, "class": "mapH2"}
+			],
+            "name": "Italy"
+		},
+		{
+			"region": "spain",
+			"transform": "translate(115, 460)",
+			"content": [
+				{"text": "西班牙",  "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "鞋履", "x": 5, "y": 12, "class": "mapH2"}
+			],
+            "name": "Spain"
+		},
+		{
+			"region": "portugal",
+			"transform": "translate(35, 480) rotate(-79)",
+			"content": [
+				{"text": "葡萄牙", "x": 0, "y": 0, "class": "mapH1"},
+				{"text": "首飾", "x": 5, "y": 12, "class": "mapH2"}
+			],
+            "name": "Portugal"
+		}
+	]
+}

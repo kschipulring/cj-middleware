@@ -1,0 +1,185 @@
+//Breakpoints are min-width
+$breakpoint-xs: 320px;
+$breakpoint-iPhone6: 375px;
+$breakpoint-iPhone6Plus: 414px;
+$breakpoint-iPhoneXmin: 1125px;
+$breakpoint-iPhoneXmax: 2436px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1920px;
+$max-screen-width: 2436px;
+$breakpoint-min-height: 420px;
+
+$footer-height: 80px;
+
+
+@mixin screen-size($media) {
+  @if $media == xxs {
+    @media only screen and (max-width: $breakpoint-xs) {
+      @content;
+    }
+  } @else if $media == iPhone6 {
+    @media only screen and (max-width: $breakpoint-iPhone6) {
+      @content;
+    }
+  } @else if $media == iPhone6Plus {
+    @media only screen and (max-width: $breakpoint-iPhone6Plus) {
+      @content;
+    }
+  } @else if $media == iPhoneXhorizontal {
+    @media only screen and (width: $breakpoint-iPhoneXmax) and (height: $breakpoint-iPhoneXmin) {
+      @content;
+    }
+  } @else if $media == iPhoneXvertical {
+    @media only screen and (width: $breakpoint-iPhoneXmin) and (height: $breakpoint-iPhoneXmax) {
+      @content;
+    }
+  } @else if $media == iPad {
+    @media only screen and (min-width: $breakpoint-xs) and (max-width: $breakpoint-md - 1) {
+      @content;
+    }
+  } @else if $media == iPadHorizontal {
+    @media only screen and (max-height: $breakpoint-sm + 1) and (min-width: $breakpoint-md - 1) {
+      @content;
+    }
+  } @else if $media == iPadVertical {
+    @media only screen and (max-width: $breakpoint-md - 1) and (min-height: $breakpoint-md - 1) {
+      @content;
+    }
+  } @else if $media == xs {
+    @media only screen and (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm - 1) {
+      @content;
+    }
+  } @else if $media == sm {
+    @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1) {
+      @content;
+    }
+  } @else if $media == md {
+    @media only screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media only screen and (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl - 1) {
+      @content;
+    }
+  } @else if $media == xl {
+    @media only screen and (min-width: $breakpoint-xl) and (max-width: $max-screen-width) {
+      @content;
+    }
+  } @else if $media == xxl {
+    @media only screen and (min-width: $max-screen-width) {
+      @content;
+    }
+  } @else if $media == sm-up {
+    @media only screen and (min-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $media == md-up {
+    @media only screen and (min-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $media == lg-up {
+    @media only screen and (min-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $media == lg-down {
+    @media only screen and (max-width: $breakpoint-lg - 1) {
+      @content;
+    }
+  } @else if $media == xl-up {
+    @media only screen and (min-width: $breakpoint-xl) {
+      @content;
+    }
+  } @else if $media == md-down {
+    @media only screen and (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $media == sm-down {
+    @media only screen and (max-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $media == iPhone6Plus {
+    @media only screen and (min-width: $breakpoint-iPhone6Plus) and (max-width: $breakpoint-md - 1) {
+      @content;
+    }
+  } @else if $media == short {
+    @media only screen and (max-height: $breakpoint-min-height) {
+      @content;
+    }
+  }
+}
+
+/*
+Animations
+ */
+
+@keyframes appear {
+  0% {
+    opacity: 0.01;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-height {
+  0% {
+    height: $footer-height;
+  }
+  100% {
+    height: 1%;
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 1%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@mixin overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  background-color: rgba(51, 51, 51, .5);
+  animation: appear 0.15s ease-in alternate;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch;
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+  // Direction has been omitted and happens to be a color-stop
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
+  }
+
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}

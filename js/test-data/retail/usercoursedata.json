@@ -1,0 +1,96 @@
+{
+  "product": [
+    {
+      "course_title": "coach 1941 overview",
+      "course_image": "assets/landing-page/sep-product-focus-1.jpg",
+      "course_completion": {
+        "is_objective_complete":"false"
+      },
+      "course_id": "product-info1"
+    },
+    {
+      "course_title": "coach 1941 women's",
+      "course_image": "assets/landing-page/sep-product-focus-2.jpg",
+      "course_completion": {
+        "is_objective_complete":"false"
+      },
+      "course_id": "product-info2"
+    },
+    {
+      "course_title": "coach 1941 men's",
+      "course_image": "assets/landing-page/sep-product-focus-3b.jpg",
+      "course_completion": {
+        "is_objective_complete":"false",
+        "course_score":"100"
+      },
+      "course_id": "product-info3"
+    }
+  ],
+  "service": [
+    {
+      "course_title": "styling 101",
+      "course_image": "assets/landing-page/sep-service-focus-1b.jpg",
+      "course_completion": {
+        "is_objective_complete":"false",
+        "course_score":"100"
+      },
+      "course_id": "service-info1"
+    },
+    {
+      "course_title": "styling coach 1941",
+      "course_image": "assets/landing-page/sep-service-focus-2.jpg",
+      "course_completion": {
+        "is_objective_complete":"false"
+      },
+      "course_id": "service-info2"
+    },
+    {
+      "course_title": "clienteling",
+      "course_image": "assets/landing-page/sep-service-focus-3.jpg",
+      "course_completion": {
+        "is_objective_complete":"false"
+      },
+      "course_id": "service-info3"
+    }
+  ],
+  "seasonal": [
+    {
+      "course_title": "regional forum",
+      "course_image": "assets/landing-page/sep-seasonal-focus-1.jpg",
+      "course_completion": {
+        "is_objective_complete":"false"
+      },
+      "course_id": "seasonal-info1"
+    },
+    {
+      "course_title": "coach fragrance",
+      "course_image": "assets/landing-page/sep-seasonal-focus-2.jpg",
+      "course_completion": {
+        "is_objective_complete":"false"
+      },
+      "course_id": "seasonal-info2"
+    },
+    {
+      "type": "product library",
+      "object_image": "assets/landing-page/sep-product-library.jpg",
+      "interaction_link": "#",
+      "course_id":"retail-product-library1"
+    }
+  ],
+  "other": [
+    {
+      "type": "last month archive",
+      "object_image": "assets/landing-page/sep-archive.jpg",
+      "course_id" : "other1"
+    },
+    {
+      "type": "spotted",
+      "object_image": "assets/landing-page/sep-spotted.jpg",
+      "course_id": "spotted1"
+    },
+    {
+      "type": "instagram",
+      "object_image": "assets/landing-page/sep-instagram.jpg"
+    }
+  ]
+}

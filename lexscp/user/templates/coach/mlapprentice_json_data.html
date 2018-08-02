@@ -1,0 +1,5 @@
+[{exp:query sql="SELECT A.cat_id, A.cat_url_title, A.cat_name, IFNULL(B.cat_id, 0) AS parent_id, IFNULL(B.cat_url_title, '') AS parent_url_title, IFNULL(B.cat_name, '') AS parent_name, IFNULL(C.field_id_1, 0) AS unlockorder, IFNULL(C.field_id_2, '') AS color, IFNULL(C.field_id_3, '') AS number_of_stops, IFNULL(C.field_id_4, '') AS minutes_to_finish
+FROM exp_categories AS A
+LEFT JOIN exp_categories AS B ON B.cat_id = A.parent_id
+JOIN exp_category_field_data AS  C ON A.cat_id = C.cat_id
+WHERE A.group_id = '1'"}{"cat_id": {cat_id}, "cat_url_title": "{cat_url_title}", "cat_name": "{cat_name}", "parent_id": {parent_id}, "parent_url_title": "{parent_url_title}", "parent_name": "{parent_name}", "unlockorder": {unlockorder}, "color": "{color}", "number_of_stops": "{number_of_stops}", "minutes_to_finish": "{minutes_to_finish}"},{/exp:query}]

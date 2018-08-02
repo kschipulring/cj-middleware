@@ -1,0 +1,383 @@
+/* 9.0 Itinerary Page */
+@import "mixins";
+
+.itinerary-header {
+  background-color: #191919;
+  background-image: url(../assets/city-outline.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 115px;
+  margin-bottom: 0px;
+
+  h3 {
+    text-align: center;
+    color: #FFF;
+    font-family: 'clarendon-urw';
+    max-width: 175px;
+    margin: 35px auto 0 auto;
+    font-size: 20px;
+    padding-right: 10px;
+    font-weight: 300;
+  }
+}
+
+.panel-body {
+  .panel-row {
+    padding: 26px 0 18px 0;
+    min-height: 88px;
+
+    @include screen-size(md-down) {
+      padding: 20px 0;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    @include screen-size(iPadVertical) {
+      padding: 20px 0 20px 20px;
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  .panel-circle {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 15px;
+
+    h5 {
+      color: #666;
+      margin: 2px auto 0 auto;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+  }
+}
+.monthly-focus-panel {
+
+  .monthly-panel-circle {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    //margin: 0 0 0 20%;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 15px;
+  }
+  .monthly-score-text {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #666;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .area-score .panel-circle {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2% 0 0 35%;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 15px;
+  }
+  .area-avg-score .panel-circle {
+    width: 48px;
+    height: 48px;
+    text-align: left;
+    line-height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2% 0 0 0;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 15px;
+  }
+
+  .monthly-focus-scores {
+    width: 120px;
+    text-align: center;
+
+    @include screen-size(md-down) {
+      width: 28%;
+      //float: right;
+    }
+  }
+
+  .monthlyfocus-itinerary-course-title {
+    float: left;
+    //padding-left: 10px;
+    @include screen-size(md-down) {
+      float: none;
+      width: 50%;
+      padding-left: 20px;
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: bold;
+      @include screen-size(md-down) {
+        //font-size: 11px;
+      }
+    }
+  }
+}
+
+.monthly-focus-comp-score,
+.monthly-focus-avg-score {
+  h4 {
+    font-weight: 900 !important;
+    font-size: 15px !important;
+    padding-top: 6px !important;
+  }
+}
+
+
+
+
+#myProfileBlock > div { padding-left: 0; padding-right: 0; }
+
+body[data-page="myProfileBlock"] {
+  .glyphicon-plus,
+  .glyphicon-minus {
+    padding-left: 14px;
+  }
+}
+
+.panel-row {
+  .itinerary-completed-check {
+    /*	margin-top: 7%;*/
+    //padding-left: 5px;
+    //right: 5px;
+    //margin-top: 6px;
+    display: inline-block;
+    margin: 0 3px 0 10px;
+    //position: absolute;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &.in-progress {
+    background: url('../assets/diagonal-line.png') center repeat;
+
+    .itinerary-score {
+      color: #000;
+      font-style: italic;
+      //padding-left: 8%;
+      font-size: 13px;
+      color: #666;
+      font-weight: 900;
+      margin-bottom: 0;
+      //margin-top: 3px;
+      //margin-top: 10px;
+    }
+  }
+
+  .itinerary-course-title-2 {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .itinerary-help{
+    /*	margin-top: 7%;*/
+  }
+
+  .itinerary-completed{
+    color: #64C497;
+  }
+}
+
+.itinerary-links {
+  font-size: 13px;
+  margin-top: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  /*	margin-top: 7%;*/
+  text-transform: uppercase;
+  padding-left: 15%;
+
+  a {
+    text-decoration: underline;
+    color: #000;
+    text-align: left;
+  }
+}
+
+//.area-links-complete {text-align: right !important;}
+
+.itinerary-course-title h3{
+  font-size: 14px;
+  margin-top: 0;
+  line-height: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  font-weight: bold !important;
+  font-style: italic !important;
+  color: #666 !important;
+  margin-left: 5px !important;
+}
+
+.stamps { line-height: 12px; margin-top: 7px !important; }
+.stamps-amount { font-size: 15px; font-weight: 900; margin-top: 5px !important; }
+
+.passport{
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #666;
+  line-height: 13px;
+}
+.total-average{
+  font-weight: 600;
+  font-size: 15px;
+  padding-left: 10%;
+  color: #000;
+}
+.avg-score{
+  text-align: center;
+  width: 85%;
+}
+.progress-graph{
+  width: 50%;
+  border-radius: 0 !important;
+}
+.progress-bar-success{
+  background-color: #64c497;
+}
+.progress-bar-danger{
+  background-color: #F74F3D;
+  border: thin blue solid;
+  border-top-color: #FFF;
+  border-bottom-color: #FFF;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-left: none;
+  border-right: none;
+}
+
+.left-target-arrival{
+  width: 28%;
+  padding: 5px 0 !important;
+  float: left;
+  opacity: .8;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  background: -webkit-linear-gradient(left, rgba(204,204,204,.2), rgba(204,204,204,1));
+  background: -o-linear-gradient(right, rgba(204,204,204,.2), rgba(204,204,204,1));
+  background: -moz-linear-gradient(right, rgba(204,204,204,.2), rgba(204,204,204,1));
+  background: linear-gradient(to right, rgba(204,204,204,.2), rgba(204,204,204,1));
+}
+.center-target-arrival{
+  width: 44%;
+  float: left;
+  background: rgba(204, 204, 204, .3);
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid #64c497;
+  text-align: center;
+}
+.right-target-arrival{
+  width: 28%;
+  padding: 5px 0 !important;
+  opacity: .8;
+  float: right;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  background: -webkit-linear-gradient(right, rgba(204,204,204,.2), rgba(204,204,204,1));
+  background: -o-linear-gradient(left, rgba(204,204,204,.2), rgba(204,204,204,1));
+  background: -moz-linear-gradient(left, rgba(204,204,204,.2), rgba(204,204,204,1));
+  background: linear-gradient(to left, rgba(204,204,204,.2), rgba(204,204,204,1));
+}
+
+/* Bootstrap Customize */
+
+.btn {
+  border-radius: 0px;
+  font-size: 13px;
+  padding: 5px 15px;
+}
+.btn-primary {
+  background-color: black;
+  border-color: black;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 1.0);
+  letter-spacing: 0.1em;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    background-color: black;
+    border-color: black;
+    background-position: 0 -15px;
+  }
+  &:active,
+  &.active {
+    background-color: black;
+    border-color: black;
+  }
+
+  &:active:hover,
+  &.active:hover,
+  &:active:focus,
+  &.active:focus,
+  &:active.focus,
+  &.active.focus {
+    background-color: black;
+    border-color: black;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] &,
+  &.disabled:hover,
+  &[disabled]:hover,
+  fieldset[disabled] &:hover,
+  &.disabled:focus,
+  &[disabled]:focus,
+  fieldset[disabled] &:focus,
+  &.disabled.focus,
+  &[disabled].focus,
+  fieldset[disabled] &.focus,
+  &.disabled:active,
+  &[disabled]:active,
+  fieldset[disabled] &:active,
+  &.disabled.active,
+  &[disabled].active,
+  fieldset[disabled] &.active {
+    background-color: black;
+    background-image: none;
+    border-color: black;
+  }
+  .badge {
+    text-shadow: none;
+  }
+}

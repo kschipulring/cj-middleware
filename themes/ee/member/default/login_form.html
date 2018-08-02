@@ -1,0 +1,147 @@
+<div class="custom-login">
+	{form_declaration}
+		<input type="hidden" name="language_id" value="1" id="language_id">
+		<input type="hidden" name="language_abbr" value="en" id="language_abbr">
+		<div class="login-block">
+			<div class="login-logo"><img src="{site_url}assets/logo.png" /></div>
+			<div class="login-form" id="login-form">
+			<div>
+				<input type="text" class="input" id="username" name="username" size="20" value="ENTER USERNAME" maxlength="50" autocorrect="off" autocapitalize="off" />
+			</div>
+			<div>
+				<input type="password" class="input" id="password" name="password" size="20" value="" maxlength="{password_max_length}" autocomplete='off' />
+			</div>
+			<div>
+				<input type="submit" id="login" name="login" class="submit" value="LOGIN" onclick="return testcheck()" />
+			</div>
+			<div class="forgot-password-div">				
+			<span class="en">Forgot your password? Contact your manager for help.</span>
+			<span class="zh-Hans">忘记密码? 寻求你的经理的协助</span>
+			<span class="zh-Hant">忘記密碼? 尋求你的經理的協助</span>
+			<span class="ja">パスワードを忘れた場合、マネジャーに確認して下さい。</span>
+			<span class="ko">비밀번호를 분실하셨나요? 매니저를 컨택하여 도움을 요청하세요. </span>
+			</div>
+			<div class="input-check-div">
+				<div class="en">I understand and acknowledge that if I am overtime eligible, Company policy permits me to access this site only during my scheduled working hours. By clicking “I agree,” I affirm that if I am overtime eligible, I am taking this training during my scheduled working hours at Coach and agree that I will log off this training site before my shift ends.
+				</div>
+				<div class="zh-Hans">本人理解并确认：如果本人符合有偿加班的资格，公司政策仅允许本人在安排上班的时间登录此网页。点击"我同意"，即表示本人确认符合有偿加班的资格，且正在安排上班的时间于Coach登录此培训网页，并且将在本人的上班时间结束前退出本培训网页。</div>
+				<div class="zh-Hant">本人瞭解且確認：如果本人符合加班補償的資格，公司的政策僅允許本人在排定上班的時間內登錄此網頁。點選"我同意"，即表示本人確認符合加班補償的資格，而且只在排定於Coach上班的時間內登錄此培訓網頁，並且在本人的上班時間結束前，登出此網頁。</div>
+				<div class="ja">私は、残業対象となる場合であってもシフト勤務時間中にこちらのサイトにアクセスすることを認識し、理解をしています。「同意します」をクリックしたことで、このオンライントレーニングはシフト勤務中に行うことを、そしてシフト勤務終了前にこのサイトをログオフすることに同意するとみなします。</div>
+				<div class="ko">"(귀하가 연장근무가 가능한 포지션인 경우) 회사 규정에 따라 근무시간 중에만 해당 사이트에 접속할 수 있음을 이해하고 동의합니다.  '동의합니다' 버튼을 클릭함으로써 나는 (연장근무가 가능한 포지션일 경우) 근무 시간 중에만 해당 교육 프로그램을 이수할 수 있음을 확인하였으며 근무 시프트 종료 전에 해당 사이트에서 로그아웃 하는 것에 동의합니다. 
+"</div>
+				<div style="margin-top: 8px;">
+				<input type="checkbox" class="input-check" id="terms" name="terms"/>
+				<span class="en">I agree</span>
+				<span class="zh-Hans">我同意</span>
+				<span class="zh-Hant">我同意</span>
+				<span class="ja">同意します</span>
+				<span class="ko">동의합니다.</span>
+				<div style="display: none;" class="nameError en">Please check the box to accept the terms of use.</div>
+				<div style="display: none;" class="nameError zh-Hans">请勾选方框表示接受使用的条件</div>
+				<div style="display: none;" class="nameError zh-Hant">請勾選方框以接受使用的條件</div>
+				<div style="display: none;" class="nameError ja">使用条件を確認してチェックを入れてください</div>
+				<div style="display: none;" class="nameError ko">체크박스를 클릭하여 사용약관에 동의합니다.</div>
+				</div>
+			</div>
+            <div class="row language-login" >
+                <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-11 col-md-11 col-sm-11 language-list">
+					<p class="en">Select your Language</p>
+					<p class="zh-Hans">选择您的语言</p>
+					<p class="zh-Hant">選擇您的語言</p>
+					<p class="ja">言語を選択する</p>
+					<p class="ko">언어 선택</p>					
+                </div>          
+            </div>
+			</div>
+		</div>
+	</form>
+</div>
+<script>
+var username_label = {};
+username_label['en'] = 'ENTER USERNAME';
+username_label['zh-Hans'] = '输入用户名';
+username_label['zh-Hant'] = '輸入使用者名稱';
+username_label['ja'] = 'ユーザーネームの入力';
+username_label['ko'] = '유저네임을 입력합니다.';
+
+var login_label = {};
+login_label['en'] = 'LOGIN';
+login_label['zh-Hans'] = '登录';
+login_label['zh-Hant'] = '登錄';
+login_label['ja'] = 'ログイン';
+login_label['ko'] = '로그인';
+
+var current_language = 'en';
+
+function arrayObjectIndexOf(myObject, searchTerm) {
+    for(var key in myObject) {
+        if (myObject[key] === searchTerm) return key;
+    }
+    return -1;
+}
+
+function testcheck()
+{
+    if (!jQuery("#terms").is(":checked")) {
+		$('.nameError.'+current_language).show();
+        return false;
+    }
+    return true;
+}
+
+$(document).ready(function(){
+
+	$('body').css('background-color', '#000000');
+
+	$('.zh-Hans, .zh-Hant, .ja, .ko').hide();
+
+	$('form').on('focusin', '#username', function(){
+		if(arrayObjectIndexOf(username_label, $('#username').val()) != -1) {
+			$('#username').val('');
+		}
+	});
+
+	$('form').on('focusout', '#username', function(){
+		if(arrayObjectIndexOf(username_label, $('#username').val()) != -1 || $('#username').val() == '') {
+			$('#username').val(username_label[current_language]);
+		}
+	});
+	
+	$('form').on('focusin', '#login', function(){
+		if(arrayObjectIndexOf(username_label, $('#login').val()) != -1) {
+			$('#login').val('');
+		}
+	});
+	
+	$('form').on('focusout', '#login', function(){
+		if(arrayObjectIndexOf(login_label, $('#login').val()) != -1 || $('#login').val() == '') {
+			$('#login').val(login_label[current_language]);
+		}
+	});
+
+	var bindLanguageLinks = function() {
+		$('.language-login a').click(function(){
+			current_language = $(this).attr('attr-lang-abbr');
+
+			$('.language-login a').removeClass('selected');
+			$(this).addClass('selected');
+			$('#language_id').val($(this).attr('attr-lang-id'));
+			$('#language_abbr').val(current_language);
+
+			$('.en, .zh-Hans, .zh-Hant, .ja, .ko').hide();
+			$('.'+current_language).show();
+			$('.nameError').hide();
+			
+			if(arrayObjectIndexOf(username_label, $('#username').val()) != -1 || $('#username').val() == '') {
+				$('#username').val(username_label[current_language]);
+			}
+			
+			if(arrayObjectIndexOf(login_label, $('#login').val()) != -1 || $('#login').val() == '') {
+				$('#login').val(login_label[current_language]);
+			}
+
+		});
+	};
+	globalDataInteractionObj.utilities.setAllowedLanguages('language-list', bindLanguageLinks);
+});
+</script>

@@ -1,0 +1,24 @@
+<div class="modal fade" id="myLanguageModal" tabindex="-1" role="dialog" aria-labelledby="myLanguageModalLabel" aria-hidden="true">
+{embed="home/.languages"}
+</div><!-- /.modal -->
+<?php
+//if($this->EE->input->cookie('language_selected') != 'y')
+//{
+?>
+<script type="text/javascript">
+// <![CDATA[
+	// For the Language Modal Popup
+	$('#myLanguageModal').on('shown.bs.modal', function (e) {
+		$( "#myLanguageModal button.close" ).remove();
+		$( "#myLanguageModal button#close" ).remove();
+	});
+	
+	$( "#myLanguageModal" ).modal({
+		backdrop: 'static',
+		keyboard: false
+	});	
+// ]]>
+</script>
+<?php
+//}
+?>

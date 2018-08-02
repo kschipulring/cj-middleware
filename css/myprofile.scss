@@ -1,0 +1,278 @@
+/* 9.0 My Profile View - Twitter Bootstrap Iteration */
+@import "mixins";
+
+/* redo twitter bootstrap's default margins & paddings */
+div.my-profile-content {
+  &, div {
+    margin: 0;
+    padding: 0;
+    //margin-right: -1px;
+
+    &.area-score-progress {
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  .profile-container {
+    padding-right: 58px;
+  }
+
+  @include screen-size(sm-down) {
+    padding-top: 40px;
+
+    .profile-container {
+      padding-right: 0;
+    }
+
+    #accordion2 {
+      margin-bottom: 100px;
+    }
+  }
+
+  @include screen-size(md) {
+    #accordion2 {
+      //margin-bottom: 100px;
+    }
+  }
+}
+
+div.panel > button {
+  width: 100%; /*min-width:450px; */
+  text-align: left;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  -webkit-appearance: none;
+  background-color: #ebebeb;
+  border: none;
+  outline: 0;
+  display: flex;
+  padding: 10px 0;
+  margin: 0;
+  align-items: center;
+
+  .plusMinus {
+    display: inline-block;
+    text-align: center;
+    border: thin solid #CCC;
+    width: 25px;
+    height: 25px;
+    padding: 5px 0 2px 2px !important;
+    margin: auto 10px !important;
+  }
+
+  .area-score {
+    height: 75px;
+    text-align: center;
+    margin: auto;
+    padding-top: 2px;
+
+    .panel-circle {
+      //width: 48px;
+      //height: 48px;
+      //text-align: center;
+      //line-height: 48px;
+      //border-radius: 50%;
+      //display: inline-block;
+      //vertical-align: middle;
+      margin: auto;
+      //color: #FFF;
+      //font-weight: 900;
+      //font-size: 15px;
+      //padding: 0 10px;
+      width: 48px;
+      height: 48px;
+      text-align: center;
+      line-height: 48px;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      //margin: 2% 0 0 35%;
+      color: #FFF;
+      font-weight: 900;
+      font-size: 15px;
+    }
+
+    h5 {
+      text-align: center;
+
+      &.score-text-area,
+      &.score-text {
+        color: #666 !important;
+        font-size: 11px !important;
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  .itinerary-links {
+    margin: auto;
+    text-align: left;
+  }
+}
+
+button.btn-toggle {
+  padding: 10px 5px;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  -webkit-appearance: none;
+  outline: 0;
+}
+
+div.panel {
+  border: none !important;
+  border-radius: 0;
+  padding-top: 20px;
+
+  &.panel-map {
+    padding-top: 0;
+  }
+}
+
+/*button[data-target="#monthlyfoitinerary-course-titlecus"] { margin-bottom: 15px; }*/
+.btn-title {
+  font-size: 17px;
+  color: #000;
+  text-transform: capitalize !important;
+  display: inline-block;
+}
+
+.area-panel {
+  min-height: 100px !important;
+  padding-top: 1.75% !important;
+  text-align: left;
+  //flex-grow: 1;
+  width: 50%;
+}
+
+.area-label {
+  height: 75px;
+}
+
+.panel-body {
+  .panel-body {
+    .panel-row {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.panel-row {
+  border-bottom: 1px #ddd solid;
+  border-left: 1px #ddd solid;
+  border-right: 1px #ddd solid;
+  background-color: #FFF;
+  //display: flex;
+
+  col-md-3.itinerary-score,
+  .itinerary-score{
+    text-align: center;
+    margin: auto;
+
+    h5 {
+      font-size: 11px;
+      margin-bottom: 0;
+    }
+  }
+
+  .itinerary-course-title h3 {
+    letter-spacing: normal;
+  }
+  &.in-progress .itinerary-score {
+    font-size: 13px;
+    padding-top: 3px;
+    //padding-left: 0;
+  }
+  .itinerary-links {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase !important;
+    margin: auto;
+
+    @include screen-size(iPadVertical) {
+      padding: 0 15px;
+    }
+  }
+  .itinerary-course-title {
+    //flex-grow: 1;
+    width: 52%;
+
+    @include screen-size(iPadVertical) {
+      width: 50%;
+    }
+
+    h3 {
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
+  }
+}
+
+.area-score-progress {
+  color: #666;
+  font-style: italic;
+  font-size: 13px;
+  color: #666;
+  font-weight: 900;
+  //padding-left: 7% !important;
+  margin: auto;
+}
+
+.area-links-complete {
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  //text-align: right;
+  //margin-left: 2% !important;
+}
+
+.area-links-inprogress {
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.area-panel h3 {
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.area-title {
+  margin-bottom: 0;
+}
+
+.area-name {
+  margin-top: 5px;
+  font-weight: normal !important;
+  text-transform: uppercase;
+  font-size: 14px !important;
+}
+
+h3.neighborhood-name {
+  margin-top: 5px;
+  font-weight: normal !important;
+  text-transform: uppercase !important;
+  font-style: italic;
+  font-size: 14px;
+  color: #666 !important
+}
+
+
+@include screen-size(sm-down) {
+  .btn-title {
+    letter-spacing: 1px;
+    font-size: 13px;
+  }
+
+  .itinerary-links a {
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+}

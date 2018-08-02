@@ -1,0 +1,41 @@
+/* 1.0 - Global and big regional elements */
+
+
+/*Show this overlay for device widths below 1024px*/
+#not-supported { position: fixed; z-index: 20000; top: 0; left: 0; width: 100%; height: 100%; background: #000; display: none; }
+#not-supported > div {  position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 100%; padding: 0 20px; }
+
+#not-supported .copy { max-width: 420px; margin: auto; }
+
+#not-supported h1 { color: #FFF; font-family: 'clarendon-urw','Clarendon', serif; font-size: 24px; margin: 10px auto 20px auto; text-align: center; letter-spacing: 1px; }
+#not-supported p { color: #FFF; font-size: 18px; text-align: center; line-height: 24px; letter-spacing: 1px; max-width: 500px; margin: 0 auto 30px auto; }
+#not-supported .logo { width: 200px; margin: 0 auto 30px auto;  }
+
+/* Preloader */
+#preloader { position: fixed; top: 0; right: 78px; height: calc(100% - 110px); width: calc(100%); background: rgba(0,0,0,.5); z-index: 31000; display: none; }
+
+/* Prevent Scrolling */
+body.no-scroll { overflow: hidden; }
+
+
+body{ font-family: 'lato', 'Lato', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+a:hover, a:visited  { text-decoration: none; }
+/*-- Placeholder - Image sizing should be considered a placeholder style until more is known about how images will be uploaded &
+    rendered into the app --*/
+div.product-focus img, div.service-focus img,
+div.seasonal-focus img, div.other-focus img {  width:100%; }
+div.course-image img  {
+  width: 100%;
+}
+div.user-sidebar > div > img  { width:75%; }
+/*--End Placeholder--*/
+div.container-fluid  { margin:0; padding:0; }
+div#main_content > div.row  { margin:0; padding:0; }
+.no-display, .event-content { display:none; }
+div.event-content  { position:absolute; }
+.default-display  { display:block; }
+div.container-fluid.app-layer  { position:absolute; }
+
+@media screen and (max-width: 1023px) {
+  //#not-supported { display: block; }
+}

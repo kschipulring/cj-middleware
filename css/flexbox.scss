@@ -1,0 +1,101 @@
+/* 11.0 - Flexbox settings */
+@import "mixins";
+
+div.container-fluid#main_content {
+  overflow: hidden;
+}
+
+body[data-page="myProfileBlock"] div.container-fluid#main_content {
+  overflow: visible;
+}
+
+div.row.flex-content {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  -webkit-flex-flow: row nowrap;
+  display: flex;
+}
+
+#myProfileBlock, #mapJourney { /*position:absolute; top:0;*/
+  visibility: hidden;
+  opacity: 0;
+}
+
+#panelModal {
+  z-index: 20;
+}
+
+#panelModal, div.main-data-view, #myProfileBlock {
+  background: rgba(255, 255, 255, 1.0);
+}
+
+/* misc CSS */
+/*.hamburger-container{
+	padding-left: 6px;
+	}*/
+
+.image-checkbox, .image-checkbox-monthly-focus {
+  width: 20px;
+}
+
+.image-checkbox, .image-checkbox-itinerary {
+  width: 25px;
+}
+
+@include screen-size(md-down) {
+  /*  This must be set to a pixel value for ipads, otherwise mobile safari causes it to stutter when the page scroll stops on an ipad */
+  #site-nav ul {
+    top: 310px;
+  }
+}
+
+@include screen-size(sm-down) {
+  .full-page-section {
+    overflow: auto;
+  }
+  div.container-fluid#main_content {
+    padding-bottom: 0;
+  }
+
+  #mapJourney {
+    &,
+    &.activestate {
+      .row,
+      .col-xs-9,
+      .col-xs-3,
+      .journey-content,
+      .journey-content-container {
+        width: 100%;
+        min-height: 100%;
+        padding-top: 0;
+      }
+
+      .col-xs-9.map-container {
+        padding: 0;
+        //margin-top: 50px;
+      }
+    }
+  }
+  //.popover {
+  //  background-color: #46000B;
+  //}
+}
+
+@include screen-size(iPhone6Plus) {
+  .popover {
+    width: 100% !important;
+    margin: auto !important;
+    top: 100px !important;
+    position: fixed !important;
+  }
+
+  #mapJourney {
+    .col-xs-9.map-container {
+      //margin-bottom: 90px;
+    }
+  }
+}
+
+
